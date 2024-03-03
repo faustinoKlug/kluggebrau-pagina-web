@@ -1,0 +1,45 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{html,js}"],
+  theme: {
+    extend: {
+      height: {
+        '80vh': '80vh',
+        '20vh': '60vh',
+      },
+      fontSize: {
+        '4.25rem': '2.6rem',
+        '3.5rem': '3rem',
+        '1.8rem': '1.6rem',
+        '1.9rem': '1.9rem',
+      },
+      colors: {
+        'b': 'rgba(0, 0, 0, 0.7)',
+        'yellowHunt': '#EEC643',
+        'blackHunt': '#141414',
+        'blackM': '#0E0C0C'
+      },
+      borderWidth: {
+        '10': '16px',
+      },
+      padding: {
+        '4.5rem': '4.5rem',
+        '0.8rem': '0.8rem',
+      },
+      fontFamily: {
+        'Raleway': 'Raleway',
+        'Protest': 'Protest Revolution',
+        'Overpass': 'Overpass'
+      },
+      width: {
+        '100': '25.5rem',
+        '292': '293px'
+      },
+      boxShadow: {
+        'contacto': '2px 2px 10px rgba(0, 0, 0, 0.5)'
+      },
+    },
+  },
+  plugins: [],
+}
+

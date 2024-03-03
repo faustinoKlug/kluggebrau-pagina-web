@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4b083bbe31.js" crossorigin="anonymous"></script>
+    <title>Klug Gebräu</title>
+</head>
+<body class="min-w-min">
+
+    <header>
+        <nav class="bg-blackM">
+            <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+              <div class="relative flex h-16 items-center justify-between">
+
+                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                  <button id="boton" type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                    <span class="absolute -inset-0.5"></span>
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                    <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </button>   
+                </div>
+
+                <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                  <div class="flex flex-shrink-0 items-center">
+                    <img class="h-auto w-24" src="./assets/logo-principal.png" alt="logo">
+                  </div>
+                  <div class="hidden sm:ml-6 sm:block">
+                    <div class="flex space-x-4">
+                      <a href="#hero-image" class="bg-gray-800 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Inicio</a>
+                      <a href="#sobre-nosotros" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Sobre Nosotros</a>
+                      <a href="#menu" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Menú</a>
+                      <a href="#contactanos" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Contáctanos</a>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          
+            <div class="sm:hidden" id="mobile-menu">
+                <div class="space-y-1 px-2 pb-3 pt-2">
+                    <a href="#hero-image" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Inicio</a>
+                    <a href="#sobre-nosotros" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Sobre Nosotros</a>
+                    <a href="#menu" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Menú</a>
+                    <a href="#contactanos" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Contáctanos</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="hero-image" class="h-80vh w-full bg-[url('assets/Captura.JPG')] bg-no-repeat bg-cover bg-center flex flex-col justify-center items-center content-center border-b-10 border-b-black">
+
+            <div class="mx-auto text-center bg-gradient-to-r from-b to-b h-80vh w-full flex flex-col justify-center items-center content-center">
+
+                <h1 class="text-white first-letter:text-orange-500  font-Protest font-semibold text-4.25rem sm:text-5xl lg:text-6xl lg:py-4">Klug Gebräu</h1>
+                <p class="text-slate-200 font-extralight text-base mb-4 sm:text-2xl lg:text-1.8rem">Una experiencia gastronómica que deja huella.</p>
+
+            </div>
+
+        </section>
+
+        <section id="sobre-nosotros" class="border-b-10 border-b-black h-auto w-full bg-blackM">
+            <div class="container mx-auto md:flex md:flex-col md:items-center lg:flex lg:flex-row lg:justify-center">
+
+                <div class="flex flex-col justify-center items-center text-start md:mr-8 md:justify-start md:items-start lg:justify-center lg:mr-12">
+
+                    <div>
+                        <h5 class="text-slate-700 py-7">QUIENES SOMOS</h5>
+                        <p class="text-white font-bold text-4xl">GASTRONOMÍA<br>Y CERVEZA<br>DE CALIDÁD</p>
+                        <hr class="my-5 w-20 border-orange-500">
+                    </div>
+
+                </div>
+    
+                <div class="flex flex-col md:flex md:flex-row md:justify-center lg:flex-row lg:mb-10">
+                    <div class="flex flex-col justify-center items-center content-center md:mx-10">
+                        <img src="assets/medalla.JPG" alt="" width="290" class="rounded-xl py-8 lg:w-64">
+                        <p class="text-slate-500 w-72 font-light lg:w-60">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, blanditiis veniam atque placeat possimus vel perspiciatis mollitia perferendis inventore quasi corrupti eligendi at quisquam repudiandae fuga nobis totam exercitationem culpa dolor sit amet consectetur adipisicing elit. Odit!.</p>
+                    </div>
+
+                    <div class="flex flex-col-reverse justify-center items-center content-center mt-16 md:flex-col lg:flex-col-reverse lg:ml-10">
+                        <img src="assets/berger.JPG" alt="" width="290" class="rounded-xl pb-8">
+                        <p class="text-slate-500 w-72 font-light pb-8 lg:w-60">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, blanditiis veniam atque placeat possimus vel perspiciatis mollitia perferendis inventore quasi corrupti eligendi at quisquam repudiandae fuga nobis totam exercitationem culpa dolor sit amet consectetur adipisicing elit. Odit!.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="hace-tu-pedido" class="h-20vh border-b-10 border-b-black bg-[url('assets/hacetupedido2.PNG')] bg-no-repeat bg-cover bg-center bg-fixed">
+            <div class="h-20vh w-full bg-gradient-to-r from-b to-b flex justify-center items-center text-center flex-col">
+                <h1 class="text-slate-200 text-5xl font-semibold">¡Hacé tu pedido!</h1>
+                <div class="text-white bg-green-700 p-3 rounded-lg hover:bg-green-800 cursor-pointer mt-8">
+                    <a href="https://wa.link/vuvszj" target="_blank"><i class="fa-brands fa-whatsapp"> <span class="font-sans text-xl">Whatsapp</span></i></a>
+                </div>
+            </div>
+            
+        </section>
+
+        <section id="menu" class="bg-[url('assets/menunegro2.JPG')] h-auto bg-no-repeat bg-cover bg-center border-b-10 border-b-black">
+            <div class="container mx-auto text-white">
+
+                <div class="px-2 mb-8 pt-4 ">
+                    <div class="md:flex md:justify-center md:items-center md:pt-9">
+                        
+                        <div class="text-menu flex flex-col items-center justify-center md:mr-8 rounded-xl lg:flex-col-reverse lg:mr-12">
+                            <img src="/src/assets/asdasdasdsdad-removebg-preview.png" alt="hamburguesa" class="w-56 md:w-72 lg:w-96 opacity-85 shadow-2xl rotate-2 mr-12 lg:mr-0">
+                            <p class="rotate-3 font-extralight text-2xl text-slate-300 font-Overpass bg-gradient-to-br from-orange-500 to-b p-2 rounded-xl mt-4 mb-2 ml-12 lg:text-1.9rem lg:p-0.8rem lg:rotate-0 lg:mb-8 lg:ml-2">Hamburguesas</p>
+                        </div>
+    
+                        <div class="flex flex-col items-center">
+                            <div class="flex flex-col my-2 max-w-96 lg:border-l-2 lg:border-l-slate-400">
+                                <span class="text-2xl font-medium lg:ml-12">🥒 Pickle Rick . . . . . . . . . . . </span>
+                                <span class="lg:ml-10">Blend 150gr, pepinillos encurtidos, repollo encurtido, alioli, queso dambo</span>
+                            </div>
+                            <div class="flex flex-col my-2 max-w-96 lg:border-l-2 lg:border-l-slate-400">
+                                <span class="text-2xl font-medium lg:ml-12">🧀 4 Quesos . . . . . . . . . . . . </span>
+                                <span class="lg:ml-10">Doble blend 150gr, panceta, barbacoa, queso dambo, muzza, roquefort, y sardo</span>
+                            </div>
+                            <div class="flex flex-col my-2 max-w-96 lg:border-l-2 lg:border-l-slate-400">
+                                <span class="text-2xl font-medium lg:ml-12">🥓 Crispy . . . . . . . . . . . . . . . . </span>
+                                <span class="lg:ml-10">Blend 150gr, panceta, huevo frito, queso dambo, cebolla crispy, morrones asados, barbacoa o alioli</span>
+                            </div>
+                            <div class="flex flex-col my-2 max-w-96 lg:border-l-2 lg:border-l-slate-400">
+                                <span class="text-2xl font-medium lg:ml-12">🥬 Vegetta . . . . . . . . . . . . . . </span>
+                                <span class="lg:ml-10">Blend vegano (consultar), lechuga, tomate, queso dambo</span>
+                            </div>
+                            <div class="flex flex-col my-2 max-w-96 lg:border-l-2 lg:border-l-slate-400">
+                                <span class="text-2xl font-medium lg:ml-12">🍅 Vegetta Red . . . . . . . . . </span>
+                                <span class="lg:ml-10">Doble blend vegano (consultar), roquefort, rucula, y cebolla caramelizada</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+    
+                <div class="px-2 mb-8 pt-4 lg:pb-12">
+                    <div class="md:flex md:justify-center md:items-center md:pt-9 ">
+                        
+                        <div class="text-menu flex flex-col items-center justify-center md:mr-8 rounded-xl lg:flex-col-reverse lg:mr-12">
+                            <img src="/src/assets/pizzas-removebg-preview.png" alt="hamburguesa" class="w-56 md:w-72 lg:w-100 opacity-85 shadow-2xl rotate-2 mr-6 lg:mr-0">
+                            <p class="rotate-3 font-extralight text-2xl text-slate-300 font-Overpass bg-gradient-to-br from-orange-500 to-b py-2 px-4 rounded-xl mt-4 mb-2 lg:text-1.9rem lg:p-0.8rem lg:rotate-0 lg:mb-8 lg:ml-2">Pizzas</p>
+                        </div>
+    
+                        <div class="flex flex-col items-center lg:mr-6">
+                            <div class="flex flex-col my-2 max-w-96 lg:border-l-2 lg:border-l-slate-400">
+                                <span class="text-2xl font-medium lg:ml-12">🍘 Calabresa . . . . . . . . . . . </span>
+                                <span class="lg:ml-10">Muzzarella, colchon de tomates, salame, ají molido</span>
+                            </div>
+                            <div class="flex flex-col my-2 max-w-96 lg:border-l-2 lg:border-l-slate-400">
+                                <span class="text-2xl font-medium lg:ml-12">🥔 Provenzal . . . . . . . . . . . </span>
+                                <span class="lg:ml-10">Doble blend 150gr, panceta, barbacoa, queso dambo, muzza, roquefort, y sardo</span>
+                            </div>
+                            <div class="flex flex-col my-2 max-w-96 lg:border-l-2 lg:border-l-slate-400">
+                                <span class="text-2xl font-medium lg:ml-12">🥗 Caprese . . . . . . . . . . . . </span>
+                                <span class="lg:ml-10">Muzzarella, queso colonia, albahaca, tomates cherry</span>
+                            </div>
+                            <div class="flex flex-col my-2 max-w-96 lg:border-l-2 lg:border-l-slate-400">
+                                <span class="text-2xl font-medium lg:ml-12">🧀 4 Quesos . . . . . . . . . . .</span>
+                                <span class="lg:ml-10">Muzzarella, roquefort, colonia, sardo y albahacaaaaaaaaaaaaaaaa</span>
+                            </div>
+                            <div class="flex flex-col my-2 max-w-96 lg:border-l-2 lg:border-l-slate-400">
+                                <span class="text-2xl font-medium lg:ml-12">🏠 De la casa . . . . . . . . . </span>
+                                <span class="lg:ml-10">Muzzarella, papas fritas, panceta, huevo frito, verdeo, tomates cherrys</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contactanos" class="border-b-10 border-b-black">
+
+            <div class="container mx-auto flex flex-col lg:flex-row lg:justify-around pb-10">
+
+                <div class="flex flex-col justify-center items-center">
+                    <h2 class="flex justify-center text-black font-medium text-3xl my-7">CONTÁCTANOS</h2>
+
+                    <article class="flex shadow-contacto p-4 rounded-xl w-292">
+                        <i class="fa-solid fa-phone"></i>
+                        <div class="ml-4">
+                            <h4 class="text-xl">Informacion de Contacto</h4>
+                            <p class="ml-2"> &bullet; +54 9 3442 5585-77</p>
+                            <p class="ml-2"> &bullet; kluggebrau@gmail.com</p>
+                        </div>
+                    </article>
+    
+                    <article class="flex shadow-contacto p-4 rounded-xl my-10 w-292">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div class="ml-4">
+                            <h4 class="text-xl">Ubicación</h4>
+                            <p class="ml-2"> &bullet; Cabo Labalta 440</p>
+                            <p class="ml-2"> &bullet; Indicaciones: Calle de tierra, deck de madera a la vista</p>
+                        </div>
+                    </article>
+    
+                    <article class="flex shadow-contacto p-4 rounded-xl w-292">
+                        <i class="fa-brands fa-instagram"></i>
+                        <div class="ml-4">
+                            <h4 class="text-xl">Redes Sociales</h4>
+                            <p class="ml-2"><a href="https://www.instagram.com/kluggebrau/" target="_blank"> &bullet; Instagram</a></p>
+                            <p class="ml-2"><a href="https://m.facebook.com/p/Klug-Gebr%C3%A4u-100057635190839/?locale=es_LA" target="_blank"> &bullet; Facebook</a></p>
+                        </div>
+                    </article>
+
+                    <div class="text-white bg-green-500 p-3 rounded-lg hover:bg-green-600 cursor-pointer mt-8 lg:hidden">
+                        <a href="https://www.google.com/maps?rlz=1C1ALOY_esAR1071AR1071&gs_lcrp=EgZjaHJvbWUqDAgAECMYJxiABBiKBTIMCAAQIxgnGIAEGIoFMhAIARAuGK8BGMcBGIAEGI4FMgYIAhBFGEAyBggDEEUYOTIHCAQQABiABDIHCAUQABiABDIGCAYQRRg8MgYIBxBFGD2oAgCwAgA&um=1&ie=UTF-8&fb=1&gl=ar&sa=X&geocode=KZ-FtEVN26-VMfKBsSTCRHSl&daddr=Cabo+Oscar+Labalta+440,+Concepci%C3%B3n+del+Uruguay,+Entre+R%C3%ADos" target="_blank"><i class="fa-solid fa-map-location-dot"> </i> <span class="font-sans text-xl">Google maps</span></a>
+                    </div>
+
+                </div>
+
+                <div class="hidden lg:block rounded-2xl">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3365.6438307007443!2d-58.25758952414538!3d-32.482217048583344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95afdb4d45b4859f%3A0xa57444c224b181f2!2sCervecer%C3%ADa%20Klug%20Gebr%C3%A4u!5e0!3m2!1ses!2sar!4v1709480190799!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mt-24"></iframe>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="bg-blackHunt h-28 flex justify-around items-center">
+        <ul class="text-white flex flex-col sm:flex-row">
+            <li>Whatsapp</li>
+            <li class="py-2 sm:py-0 sm:px-8">Informacion</li>
+            <li>Teléfono</li>
+        </ul>
+        <img src="assets/logo-principal.png" alt="logo" class="h-10 w-24">
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
