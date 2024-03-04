@@ -38,6 +38,13 @@ module.exports = {
       boxShadow: {
         'contacto': '2px 2px 10px rgba(0, 0, 0, 0.5)'
       },
+      animation: {
+        'slide-left': 'slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both',
+        'slide-top': 'slide-in-top 1s cubic-bezier(.25,.46,.45,.94) both',
+        'slide-fwd': 'slide-in-fwd-center 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both',
+        'slide-bottom': 'slide-in-bottom 1s cubic-bezier(.25,.46,.45,.94) both',
+        'slide-right': 'slide-in-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both',
+      },
     },
   },
   plugins: [],

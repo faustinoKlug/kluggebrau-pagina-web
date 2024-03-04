@@ -801,6 +801,26 @@ html {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.animate-slide-bottom{
+  animation: slide-in-bottom 1s cubic-bezier(.25,.46,.45,.94) both;
+}
+
+.animate-slide-fwd{
+  animation: slide-in-fwd-center 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.animate-slide-left{
+  animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.animate-slide-right{
+  animation: slide-in-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.animate-slide-top{
+  animation: slide-in-top 1s cubic-bezier(.25,.46,.45,.94) both;
+}
+
 .cursor-pointer{
   cursor: pointer;
 }
@@ -953,6 +973,10 @@ html {
   background-position: center;
 }
 
+.bg-top{
+  background-position: top;
+}
+
 .bg-no-repeat{
   background-repeat: no-repeat;
 }
@@ -967,11 +991,6 @@ html {
 
 .p-4{
   padding: 1rem;
-}
-
-.px-12{
-  padding-left: 3rem;
-  padding-right: 3rem;
 }
 
 .px-2{
@@ -1004,9 +1023,8 @@ html {
   padding-bottom: 2rem;
 }
 
-.py-4{
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+.pb-10{
+  padding-bottom: 2.5rem;
 }
 
 .pb-3{
@@ -1023,14 +1041,6 @@ html {
 
 .pt-4{
   padding-top: 1rem;
-}
-
-.pb-12{
-  padding-bottom: 3rem;
-}
-
-.pb-10{
-  padding-bottom: 2.5rem;
 }
 
 .text-center{
@@ -1168,6 +1178,66 @@ html {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+@keyframes slide-in-left{
+  0%{
+    transform:translateX(-1000px);
+    opacity:0
+  }
+
+  100%{
+    transform:translateX(0);
+    opacity:1
+  }
+}
+
+@keyframes slide-in-bottom{
+  0%{
+    transform:translateY(1000px);
+    opacity:0
+  }
+
+  100%{
+    transform:translateY(0);
+    opacity:1
+  }
+}
+
+@keyframes slide-in-top{
+  0%{
+    transform:translateY(-1000px);
+    opacity:0
+  }
+
+  100%{
+    transform:translateY(0);
+    opacity:1
+  }
+}
+
+@keyframes slide-in-fwd-center{
+  0%{
+    transform:translateZ(-1400px);
+    opacity:0
+  }
+
+  100%{
+    transform:translateZ(0);
+    opacity:1
+  }
+}
+
+@keyframes slide-in-right{
+  0%{
+    transform:translateX(1000px);
+    opacity:0
+  }
+
+  100%{
+    transform:translateX(0);
+    opacity:1
+  }
+}
+
 .first-letter\:text-orange-500::first-letter{
   --tw-text-opacity: 1;
   color: rgb(249 115 22 / var(--tw-text-opacity));
@@ -1243,14 +1313,14 @@ html {
     padding-right: 1.5rem;
   }
 
-  .sm\:py-0{
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-
   .sm\:px-8{
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .sm\:py-0{
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
   .sm\:text-2xl{
