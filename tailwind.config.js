@@ -4,9 +4,9 @@ module.exports = {
  theme: {
   extend: {
    fontFamily: {
-    Quicksand: "Quicksand",
-    Shadows: "Shadows Into Light",
-    Caveat: "Merienda",
+    "Quicksand": "Quicksand",
+    "Shadows": "Shadows Into Light",
+    "Caveat": "Merienda",
    },
    maxWidth: {
     "1250px": "1250px",
@@ -24,11 +24,13 @@ module.exports = {
     "900px": "900px",
     "440px": "440px",
     "500px": "500px",
+    "230px": "230px",
+    "300px": "300px",
    },
    colors: {
-    black1: "#0A0505",
-    black2: "#0F0808",
-    black3: "#0C0A0A",
+    "black1": "#0A0505",
+    "black2": "#0F0808",
+    "black3": "#0C0A0A",
    },
    width: {
     "99p": "98%",
@@ -36,7 +38,7 @@ module.exports = {
    height: {
     "40dvh": "40dvh",
     "35dvh": "35dvh",
-    "60dvh": "60dvh"
+    "60dvh": "60dvh",
    },
    maxHeight: {
     "500px": "500px",

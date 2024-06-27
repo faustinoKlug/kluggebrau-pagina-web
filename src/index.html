@@ -43,7 +43,7 @@
                 </nav>
 
                 <!-- BOTON -->
-                <div class="hidden items-center mr-2 970px:flex">
+                <div class="hidden items-center mr-2 lg:flex">
                     <button class="btnreserva font-bold text-xl h-auto px-6 py-3 rounded-md"><a
                             href="https://wa.link/vuvszj" target="_blank">HACÉ TU RESERVA</a></button>
                 </div>
@@ -55,7 +55,7 @@
 
                 <!-- LOGO -->
                 <div class="flex items-center ml-2">
-                    <img src="assets/logo.png" alt="logo" width="78" height="78">
+                    <img src="assets/logo.png" alt="logo" width="78" height="78" class="hidden 230px:inline">
                     <p class="ml-2 font-Shadows text-xl 360px:logo font-medium">
                         <span
                             class="logo 360px:text-3xl font-bold bg-gradient-to-r from-green-600 via-green-400 to-emerald-600 inline-block text-transparent bg-clip-text">Klug
@@ -78,7 +78,8 @@
             <nav class="mb-4 mt-3 hidden md:hidden w-full" id="menu">
                 <ul>
                     <li class="text-xl w-99p nav-mobile p-2 mx-2"><a href="#hero">Inicio</a></li>
-                    <li class="my-2 text-xl w-99p nav-mobile2 p-2 mx-2"><a href="#sobre-nosotros">Sobre nosotros</a></li>
+                    <li class="my-2 text-xl w-99p nav-mobile2 p-2 mx-2"><a href="#sobre-nosotros">Sobre nosotros</a>
+                    </li>
                     <li class="text-xl w-99p nav-mobile2 p-2 mx-2"><a href="#menu-bar">Menu</a></li>
                     <li class="my-2 text-xl w-99p nav-mobile2 p-2 mx-2"><a href="#encuesta">Encuesta</a></li>
                     <li class="text-xl w-99p nav-mobile2 p-2 mx-2"><a href="#contacto">Contacto</a></li>
@@ -111,44 +112,40 @@
             <article class="mx-auto max-w-1250px relative">
 
                 <div class="flex flex-col md:flex-row md:justify-between">
-                    <div class="mb-4 mr-2 flex flex-col justify-center md:mb-0">
-
-                        <div class="flex">
-                            <h2 class="mr-2 text-3xl lg:text-4xl">Sobre <span
-                                    class="bg-gradient-to-r from-green-300 via-emerald-400 to-green-300 inline-block text-transparent bg-clip-text font-medium">nosotros</span>
+                    <div class="mb-4 mr-2 flex flex-col items-center justify-center md:mb-0">
+                        <div class="">
+                            <h2 class="mr-2 text-3xl lg:text-4xl flex">
+                                <span>Sobre <span class="text-emerald-400">nosotros </span></span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 36 36"
+                                    class="hidden 300px:flex ml-2">
+                                    <path fill="#FFAC33"
+                                        d="M31 5.718h-6v4h4s2 0 2 2v12c0 2-2 2-2 2h-4v4h6c2.206 0 4-1.794 4-4v-16c0-2.206-1.794-4-4-4" />
+                                    <path fill="#FFCC4D" d="M27 6H3v26a4 4 0 0 0 4 4h16a4 4 0 0 0 4-4z" />
+                                    <path fill="#F4900C"
+                                        d="M8.5 32a1 1 0 0 1-1-1V15a1 1 0 0 1 2 0v16a1 1 0 0 1-1 1m6.5 0a1 1 0 0 1-1-1V15a1 1 0 0 1 2 0v16a1 1 0 0 1-1 1m6.5 0a1 1 0 0 1-1-1V15a1 1 0 1 1 2 0v16a1 1 0 0 1-1 1" />
+                                    <path fill="#FFAC33"
+                                        d="M3 5v7.445c.59.344 1.268.555 2 .555a4 4 0 0 0 3.701-2.491c.35.302.801.491 1.299.491c.677 0 1.273-.338 1.635-.853A3.988 3.988 0 0 0 15 12a3.98 3.98 0 0 0 3.176-1.593A2.496 2.496 0 0 0 20.5 12c.949 0 1.765-.535 2.188-1.314l.147-.361a3.463 3.463 0 0 0 1.665.439c.981 0 1.865-.406 2.5-1.056V5z" />
+                                    <path fill="#EEE"
+                                        d="M24 0H4a3 3 0 0 0-3 3v4a4 4 0 0 0 7.701 1.509C9.051 8.811 9.502 9 10 9c.677 0 1.273-.338 1.635-.853A3.988 3.988 0 0 0 15 10a3.98 3.98 0 0 0 3.176-1.593A2.496 2.496 0 0 0 20.5 10c.949 0 1.765-.535 2.188-1.314c.398.195.839.314 1.312.314a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3" />
+                                </svg>
                             </h2>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 36 36">
-                                <path fill="#FFAC33"
-                                    d="M31 5.718h-6v4h4s2 0 2 2v12c0 2-2 2-2 2h-4v4h6c2.206 0 4-1.794 4-4v-16c0-2.206-1.794-4-4-4" />
-                                <path fill="#FFCC4D" d="M27 6H3v26a4 4 0 0 0 4 4h16a4 4 0 0 0 4-4z" />
-                                <path fill="#F4900C"
-                                    d="M8.5 32a1 1 0 0 1-1-1V15a1 1 0 0 1 2 0v16a1 1 0 0 1-1 1m6.5 0a1 1 0 0 1-1-1V15a1 1 0 0 1 2 0v16a1 1 0 0 1-1 1m6.5 0a1 1 0 0 1-1-1V15a1 1 0 1 1 2 0v16a1 1 0 0 1-1 1" />
-                                <path fill="#FFAC33"
-                                    d="M3 5v7.445c.59.344 1.268.555 2 .555a4 4 0 0 0 3.701-2.491c.35.302.801.491 1.299.491c.677 0 1.273-.338 1.635-.853A3.988 3.988 0 0 0 15 12a3.98 3.98 0 0 0 3.176-1.593A2.496 2.496 0 0 0 20.5 12c.949 0 1.765-.535 2.188-1.314l.147-.361a3.463 3.463 0 0 0 1.665.439c.981 0 1.865-.406 2.5-1.056V5z" />
-                                <path fill="#EEE"
-                                    d="M24 0H4a3 3 0 0 0-3 3v4a4 4 0 0 0 7.701 1.509C9.051 8.811 9.502 9 10 9c.677 0 1.273-.338 1.635-.853A3.988 3.988 0 0 0 15 10a3.98 3.98 0 0 0 3.176-1.593A2.496 2.496 0 0 0 20.5 10c.949 0 1.765-.535 2.188-1.314c.398.195.839.314 1.312.314a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3" />
-                            </svg>
+    
+                            <div class="flex justify-center gap-2 mt-2" style="width: 40%;">
+                                <div class="lineas linea-1 bg-emerald-300" style="width: 5%; height: 3px; "></div>
+                                <div class="lineas linea-2 bg-white" style="width: 4%; height: 3px; "></div>
+                                <div class="lineas linea-3 bg-emerald-300" style="width: 10%; height: 3px; "></div>
+                            </div>
+    
+                            <p class="mt-4 max-w-550px lg:text-lg">
+                                Somos un <span class="font-bold">emprendimiento familiar</span> llevado a cabo por un padre
+                                y sus dos hijos, unidos por la <span class="font-bold">pasión por la cerveza artesanal y la
+                                    buena comida</span>. Nuestro emprendimiento familiar se centra en ofrecer <span
+                                    class="font-bold">cervezas artesanales de alta calidad y una experiencia gastronómica
+                                    excepcional</span>. Nuestra oferta gastronómica está diseñada para complementar nuestras
+                                cervezas a la perfección. Cada plato está pensado para resaltar los sabores y brindar una
+                                experiencia única.
+                            </p>
                         </div>
-
-                        <div class="flex justify-center gap-2 mt-2" style="width: 40%;">
-                            <div class="lineas linea-1 bg-emerald-300"
-                                style="width: 5%; height: 3px; "></div>
-                            <div class="lineas linea-2 bg-white"
-                                style="width: 4%; height: 3px; "></div>
-                            <div class="lineas linea-3 bg-emerald-300"
-                                style="width: 10%; height: 3px; "></div>
-                        </div>
-
-                        <p class="mt-4 max-w-550px lg:text-lg">
-                            Somos un <span class="font-bold">emprendimiento familiar</span> llevado a cabo por un padre
-                            y sus dos hijos, unidos por la <span class="font-bold">pasión por la cerveza artesanal y la
-                                buena comida</span>. Nuestro emprendimiento familiar se centra en ofrecer <span
-                                class="font-bold">cervezas artesanales de alta calidad y una experiencia gastronómica
-                                excepcional</span>. Nuestra oferta gastronómica está diseñada para complementar nuestras
-                            cervezas a la perfección. Cada plato está pensado para resaltar los sabores y brindar una
-                            experiencia única.
-                        </p>
-
                     </div>
 
                     <div class="flex justify-center">
@@ -223,12 +220,9 @@
 
                     <!-- SEPARADOR -->
                     <article class="flex sm:hidden justify-center mx-auto gap-2 my-2" style="width: 40%;">
-                        <div class="lineas linea-1 bg-emerald-300"
-                            style="width: 5%; height: 3px; "></div>
-                        <div class="lineas linea-2 bg-white"
-                            style="width: 4%; height: 3px; "></div>
-                        <div class="lineas linea-3 bg-emerald-300"
-                            style="width: 10%; height: 3px; "></div>
+                        <div class="lineas linea-1 bg-emerald-300" style="width: 5%; height: 3px; "></div>
+                        <div class="lineas linea-2 bg-white" style="width: 4%; height: 3px; "></div>
+                        <div class="lineas linea-3 bg-emerald-300" style="width: 10%; height: 3px; "></div>
                     </article>
 
                     <div class="flex flex-col items-center justify-center m-4">
@@ -247,12 +241,9 @@
 
                     <!-- SEPARADOR -->
                     <article class="flex sm:hidden justify-center mx-auto gap-2 my-2" style="width: 40%;">
-                        <div class="lineas linea-1 bg-emerald-300"
-                            style="width: 5%; height: 3px; "></div>
-                        <div class="lineas linea-2 bg-white"
-                            style="width: 4%; height: 3px; "></div>
-                        <div class="lineas linea-3 bg-emerald-300"
-                            style="width: 10%; height: 3px; "></div>
+                        <div class="lineas linea-1 bg-emerald-300" style="width: 5%; height: 3px; "></div>
+                        <div class="lineas linea-2 bg-white" style="width: 4%; height: 3px; "></div>
+                        <div class="lineas linea-3 bg-emerald-300" style="width: 10%; height: 3px; "></div>
                     </article>
 
                     <div class="flex flex-col items-center justify-center  m-4">
@@ -271,12 +262,9 @@
 
                     <!-- SEPARADOR -->
                     <article class="flex sm:hidden justify-center mx-auto gap-2 my-2" style="width: 40%;">
-                        <div class="lineas linea-1 bg-emerald-300"
-                            style="width: 5%; height: 3px; "></div>
-                        <div class="lineas linea-2 bg-white"
-                            style="width: 4%; height: 3px; "></div>
-                        <div class="lineas linea-3 bg-emerald-300"
-                            style="width: 10%; height: 3px; "></div>
+                        <div class="lineas linea-1 bg-emerald-300" style="width: 5%; height: 3px; "></div>
+                        <div class="lineas linea-2 bg-white" style="width: 4%; height: 3px; "></div>
+                        <div class="lineas linea-3 bg-emerald-300" style="width: 10%; height: 3px; "></div>
                     </article>
 
                     <div class="flex flex-col items-center justify-center m-4">
@@ -312,12 +300,9 @@
 
                     <!-- SEPARADOR -->
                     <article class="flex sm:hidden justify-center mx-auto gap-2 my-2" style="width: 40%;">
-                        <div class="lineas linea-1 bg-emerald-300"
-                            style="width: 5%; height: 3px; "></div>
-                        <div class="lineas linea-2 bg-white"
-                            style="width: 4%; height: 3px; "></div>
-                        <div class="lineas linea-3 bg-emerald-300"
-                            style="width: 10%; height: 3px; "></div>
+                        <div class="lineas linea-1 bg-emerald-300" style="width: 5%; height: 3px; "></div>
+                        <div class="lineas linea-2 bg-white" style="width: 4%; height: 3px; "></div>
+                        <div class="lineas linea-3 bg-emerald-300" style="width: 10%; height: 3px; "></div>
                     </article>
 
                     <div class="flex flex-col items-center justify-center m-4">
@@ -335,12 +320,9 @@
 
                     <!-- SEPARADOR -->
                     <article class="flex sm:hidden justify-center mx-auto gap-2 my-2" style="width: 40%;">
-                        <div class="lineas linea-1 bg-emerald-300"
-                            style="width: 5%; height: 3px; "></div>
-                        <div class="lineas linea-2 bg-white"
-                            style="width: 4%; height: 3px; "></div>
-                        <div class="lineas linea-3 bg-emerald-300"
-                            style="width: 10%; height: 3px; "></div>
+                        <div class="lineas linea-1 bg-emerald-300" style="width: 5%; height: 3px; "></div>
+                        <div class="lineas linea-2 bg-white" style="width: 4%; height: 3px; "></div>
+                        <div class="lineas linea-3 bg-emerald-300" style="width: 10%; height: 3px; "></div>
                     </article>
 
                     <div class="flex flex-col items-center justify-center  m-4">
@@ -358,12 +340,9 @@
 
                     <!-- SEPARADOR -->
                     <article class="flex sm:hidden justify-center mx-auto gap-2 my-2" style="width: 40%;">
-                        <div class="lineas linea-1 bg-emerald-300"
-                            style="width: 5%; height: 3px; "></div>
-                        <div class="lineas linea-2 bg-white"
-                            style="width: 4%; height: 3px; "></div>
-                        <div class="lineas linea-3 bg-emerald-300"
-                            style="width: 10%; height: 3px; "></div>
+                        <div class="lineas linea-1 bg-emerald-300" style="width: 5%; height: 3px; "></div>
+                        <div class="lineas linea-2 bg-white" style="width: 4%; height: 3px; "></div>
+                        <div class="lineas linea-3 bg-emerald-300" style="width: 10%; height: 3px; "></div>
                     </article>
 
                     <div class="flex flex-col items-center justify-center m-4">
@@ -398,12 +377,9 @@
 
                     <!-- SEPARADOR -->
                     <article class="flex sm:hidden justify-center mx-auto gap-2 my-2" style="width: 40%;">
-                        <div class="lineas linea-1 bg-emerald-300"
-                            style="width: 5%; height: 3px; "></div>
-                        <div class="lineas linea-2 bg-white"
-                            style="width: 4%; height: 3px; "></div>
-                        <div class="lineas linea-3 bg-emerald-300"
-                            style="width: 10%; height: 3px; "></div>
+                        <div class="lineas linea-1 bg-emerald-300" style="width: 5%; height: 3px; "></div>
+                        <div class="lineas linea-2 bg-white" style="width: 4%; height: 3px; "></div>
+                        <div class="lineas linea-3 bg-emerald-300" style="width: 10%; height: 3px; "></div>
                     </article>
 
                     <div class="flex flex-col items-center justify-center  m-4">
@@ -420,12 +396,9 @@
 
                     <!-- SEPARADOR -->
                     <article class="flex sm:hidden justify-center mx-auto gap-2 my-2" style="width: 40%;">
-                        <div class="lineas linea-1 bg-emerald-300"
-                            style="width: 5%; height: 3px; "></div>
-                        <div class="lineas linea-2 bg-white"
-                            style="width: 4%; height: 3px; "></div>
-                        <div class="lineas linea-3 bg-emerald-300"
-                            style="width: 10%; height: 3px; "></div>
+                        <div class="lineas linea-1 bg-emerald-300" style="width: 5%; height: 3px; "></div>
+                        <div class="lineas linea-2 bg-white" style="width: 4%; height: 3px; "></div>
+                        <div class="lineas linea-3 bg-emerald-300" style="width: 10%; height: 3px; "></div>
                     </article>
 
                     <div class="flex flex-col items-center justify-center m-4">
@@ -442,12 +415,9 @@
 
                     <!-- SEPARADOR -->
                     <article class="flex sm:hidden justify-center mx-auto gap-2 my-2" style="width: 40%;">
-                        <div class="lineas linea-1 bg-emerald-300"
-                            style="width: 5%; height: 3px; "></div>
-                        <div class="lineas linea-2 bg-white"
-                            style="width: 4%; height: 3px; "></div>
-                        <div class="lineas linea-3 bg-emerald-300"
-                            style="width: 10%; height: 3px; "></div>
+                        <div class="lineas linea-1 bg-emerald-300" style="width: 5%; height: 3px; "></div>
+                        <div class="lineas linea-2 bg-white" style="width: 4%; height: 3px; "></div>
+                        <div class="lineas linea-3 bg-emerald-300" style="width: 10%; height: 3px; "></div>
                     </article>
 
                     <div class="flex flex-col items-center justify-center m-4">
@@ -481,12 +451,9 @@
 
                     <!-- SEPARADOR -->
                     <article class="flex sm:hidden justify-center mx-auto gap-2 my-2" style="width: 40%;">
-                        <div class="lineas linea-1 bg-emerald-300"
-                            style="width: 5%; height: 3px; "></div>
-                        <div class="lineas linea-2 bg-white"
-                            style="width: 4%; height: 3px; "></div>
-                        <div class="lineas linea-3 bg-emerald-300"
-                            style="width: 10%; height: 3px; "></div>
+                        <div class="lineas linea-1 bg-emerald-300" style="width: 5%; height: 3px; "></div>
+                        <div class="lineas linea-2 bg-white" style="width: 4%; height: 3px; "></div>
+                        <div class="lineas linea-3 bg-emerald-300" style="width: 10%; height: 3px; "></div>
                     </article>
 
                     <div class="flex flex-col items-center justify-center m-4">
@@ -503,12 +470,9 @@
 
                     <!-- SEPARADOR -->
                     <article class="flex sm:hidden justify-center mx-auto gap-2 my-2" style="width: 40%;">
-                        <div class="lineas linea-1 bg-emerald-300"
-                            style="width: 5%; height: 3px; "></div>
-                        <div class="lineas linea-2 bg-white"
-                            style="width: 4%; height: 3px; "></div>
-                        <div class="lineas linea-3 bg-emerald-300"
-                            style="width: 10%; height: 3px; "></div>
+                        <div class="lineas linea-1 bg-emerald-300" style="width: 5%; height: 3px; "></div>
+                        <div class="lineas linea-2 bg-white" style="width: 4%; height: 3px; "></div>
+                        <div class="lineas linea-3 bg-emerald-300" style="width: 10%; height: 3px; "></div>
                     </article>
                     <div class="flex flex-col items-center justify-center m-4">
                         <img src="./assets/ipaargenta.png" alt="pizza" class="rounded-full" width="200">
@@ -524,12 +488,9 @@
 
                     <!-- SEPARADOR -->
                     <article class="flex sm:hidden justify-center mx-auto gap-2 my-2" style="width: 40%;">
-                        <div class="lineas linea-1 bg-emerald-300"
-                            style="width: 5%; height: 3px; "></div>
-                        <div class="lineas linea-2 bg-white"
-                            style="width: 4%; height: 3px; "></div>
-                        <div class="lineas linea-3 bg-emerald-300"
-                            style="width: 10%; height: 3px; "></div>
+                        <div class="lineas linea-1 bg-emerald-300" style="width: 5%; height: 3px; "></div>
+                        <div class="lineas linea-2 bg-white" style="width: 4%; height: 3px; "></div>
+                        <div class="lineas linea-3 bg-emerald-300" style="width: 10%; height: 3px; "></div>
                     </article>
 
                     <div class="flex flex-col items-center justify-center m-4">
@@ -565,12 +526,9 @@
                     <h2 class="text-left font-bold text-3xl">¡Te <span class="text-emerald-400">necesitamos</span>!</h2>
 
                     <article class="flex justify-center gap-2 my-2 w-1/2">
-                        <div class="lineas linea-1 bg-emerald-300"
-                            style="width: 5%; height: 3px; "></div>
-                        <div class="lineas linea-2 bg-white"
-                            style="width: 4%; height: 3px; "></div>
-                        <div class="lineas linea-3 bg-emerald-300"
-                            style="width: 10%; height: 3px; "></div>
+                        <div class="lineas linea-1 bg-emerald-300" style="width: 5%; height: 3px; "></div>
+                        <div class="lineas linea-2 bg-white" style="width: 4%; height: 3px; "></div>
+                        <div class="lineas linea-3 bg-emerald-300" style="width: 10%; height: 3px; "></div>
                     </article>
 
                     <p class="mb-4 md:max-w-500px">
@@ -609,12 +567,9 @@
                             class="text-emerald-400">necesitamos</span>!</h2>
 
                     <article class="flex justify-center gap-2 my-2 w-1/2">
-                        <div class="lineas linea-1 bg-emerald-300"
-                            style="width: 5%; height: 3px; "></div>
-                        <div class="lineas linea-2 bg-white"
-                            style="width: 4%; height: 3px; "></div>
-                        <div class="lineas linea-3 bg-emerald-300"
-                            style="width: 10%; height: 3px; "></div>
+                        <div class="lineas linea-1 bg-emerald-300" style="width: 5%; height: 3px; "></div>
+                        <div class="lineas linea-2 bg-white" style="width: 4%; height: 3px; "></div>
+                        <div class="lineas linea-3 bg-emerald-300" style="width: 10%; height: 3px; "></div>
                     </article>
 
                     <p class="text-base sm:text-lg mb-4 md:max-w-500px lg:text-lg lg:max-w-lg xl:max-w-xl">
@@ -638,16 +593,13 @@
 
         <section id="contacto" class="w-full contacto text-white mb-40 overflow-hidden ">
             <article class="mx-auto max-w-1250px flex flex-col items-center px-3 lg:flex-row lg:justify-between">
-                
+
                 <article>
                     <h2 class="text-xl font-bold text-center 500px:text-start sm:text-2xl md:text-3xl">INFORMACIÓN</h2>
                     <article class="hidden sm:flex justify-start gap-2 mt-3 w-1/2 ">
-                        <div class="lineas linea-1 bg-emerald-300"
-                            style="width: 5%; height: 3px; "></div>
-                        <div class="lineas linea-2 bg-white"
-                            style="width: 4%; height: 3px; "></div>
-                        <div class="lineas linea-3 bg-emerald-300"
-                            style="width: 10%; height: 3px; "></div>
+                        <div class="lineas linea-1 bg-emerald-300" style="width: 5%; height: 3px; "></div>
+                        <div class="lineas linea-2 bg-white" style="width: 4%; height: 3px; "></div>
+                        <div class="lineas linea-3 bg-emerald-300" style="width: 10%; height: 3px; "></div>
                     </article>
                     <div class="grid grid-cols-1 my-5 500px:grid-cols-2 500px:justify-between">
                         <div class="flex flex-col mb-3 max-w-64 500px:mr-3 ">
@@ -660,7 +612,7 @@
                             </h3>
                             <p class="text-gray-200">Cabo O. Labalta 440, Concepcion del uruguay, Entre Ríos</p>
                         </div>
-    
+
                         <div class="flex flex-col mb-3">
                             <h3 class="flex items-center my-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
@@ -674,7 +626,7 @@
                             </h3>
                             <p class="text-gray-200">Miercoles a Domingos <br>20:00-01:30</p>
                         </div>
-    
+
                         <div class="flex flex-col mb-3 500px:mb-0">
                             <h3 class="flex items-center my-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
@@ -690,7 +642,7 @@
                             <p class="text-gray-200">+54 3442 42-1243</p>
                             <p class="text-gray-200">kluggebrau@gmail.com</p>
                         </div>
-    
+
                         <div class="flex flex-col">
                             <h3 class="flex items-center my-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 256 256">

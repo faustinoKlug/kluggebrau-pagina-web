@@ -980,12 +980,6 @@ html {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
-.from-green-300{
-  --tw-gradient-from: #86efac var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(134 239 172 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
 .from-green-400{
   --tw-gradient-from: #4ade80 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(74 222 128 / 0) var(--tw-gradient-to-position);
@@ -1001,11 +995,6 @@ html {
 .via-emerald-300{
   --tw-gradient-to: rgb(110 231 183 / 0)  var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), #6ee7b7 var(--tw-gradient-via-position), var(--tw-gradient-to);
-}
-
-.via-emerald-400{
-  --tw-gradient-to: rgb(52 211 153 / 0)  var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), #34d399 var(--tw-gradient-via-position), var(--tw-gradient-to);
 }
 
 .via-green-400{
@@ -1258,6 +1247,18 @@ html {
 .first-letter\:text-yellow-400::first-letter{
   --tw-text-opacity: 1;
   color: rgb(250 204 21 / var(--tw-text-opacity));
+}
+
+@media (min-width: 230px){
+  .\32 30px\:inline{
+    display: inline;
+  }
+}
+
+@media (min-width: 300px){
+  .\33 00px\:flex{
+    display: flex;
+  }
 }
 
 @media (min-width: 360px){
