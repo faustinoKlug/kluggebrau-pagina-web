@@ -5,17 +5,5 @@ const d = document;
 
 d.addEventListener("DOMContentLoaded", (event) => {
  menuHamburguesa("#boton", "#menu");
- menuComida(
-  ".pizzas",
-  ".burgers",
-  ".papas",
-  ".cervezas",
-  ".btm",
-  "#menuPi",
-  "#menuBu",
-  "#menuPa",
-  "#menuBi",
-  ".btn",
-  ".menu"
- );
+ menuComida(".btm", ".btn", ".menu");
 });
