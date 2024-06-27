@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="language" content="spanish">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./hamburgers.css">
+    <link rel="icon" href="./assets/logo.png">
+    <script src="https://kit.fontawesome.com/4b083bbe31.js" crossorigin="anonymous"></script>
+    <title>Klug Gebrau - Restobar de Cerveza Artesanal</title>
+</head>
+
+<body class="bg-black1 text-white flex flex-col justify-between">
+    <header class="mx-auto w-full flex items-center flex-col bg-header sticky top-0">
+
+        <!-- DESKTOP -->
+        <div class="hidden py-2 justify-between md:flex max-w-1250px mx-auto w-full">
+
+            <!-- LOGO -->
+            <div class="flex items-center ml-2">
+                <img src="assets/logo.png" alt="logo kluggebrau" width="78" height="78">
+                <p class="ml-2 font-Shadows logo font-medium">
+                    <span
+                        class="text-3xl font-semibold bg-gradient-to-r from-green-600 via-green-400 to-emerald-600 inline-block text-transparent bg-clip-text">Klug
+                        Gebrau</span><br>Cerveza Artesanal
+                </p>
+            </div>
+
+            <!-- MENU DE NAVEGACION -->
+            <nav class="flex items-center mr-2">
+                <ul class="flex">
+                    <li class="hovAnim text-lg"><a href="index.html#hero">Inicio</a></li>
+                    <li class="hovAnim mx-7 text-lg"><a href="index.html#sobre-nosotros">Sobre nosotros</a></li>
+                    <li class="hovAnim mr-7 text-lg"><a href="index.html#menu-bar">Menú</a></li>
+                    <li class="hovAnim text-lg"><a href="index.html#encuesta">Encuesta</a></li>
+                </ul>
+            </nav>
+
+            <!-- BOTON -->
+            <div class="hidden items-center mr-2 970px:flex">
+                <button class="btnreserva font-bold text-xl h-auto px-6 py-3 rounded-md"><a
+                        href="https://wa.link/vuvszj" target="_blank">HACÉ TU RESERVA</a></button>
+            </div>
+
+        </div>
+
+        <!-- MOBILE -->
+        <div class="flex py-2 justify-between md:hidden max-w-1250px w-full">
+
+            <!-- LOGO -->
+            <div class="flex items-center ml-2">
+                <img src="assets/logo.png" alt="logo" width="78" height="78">
+                <p class="ml-2 font-Shadows text-xl 360px:logo font-medium">
+                    <span
+                        class="logo 360px:text-3xl font-bold bg-gradient-to-r from-green-600 via-green-400 to-emerald-600 inline-block text-transparent bg-clip-text">Klug
+                        Gebrau</span><br>Cerveza Artesanal
+                </p>
+            </div>
+
+            <!-- BOTON HAMB -->
+            <div class="flex items-center">
+                <button class="hamburger hamburger--squeeze" type="button" id="boton">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+
+        </div>
+
+        <!-- MENU DE NAVEGACION MOBILE-->
+        <nav class="mb-4 mt-3 hidden md:hidden w-full" id="menu">
+            <ul>
+                <li class="text-xl w-99p nav-mobile p-2 mx-2"><a href="index.html#hero">Inicio</a></li>
+                <li class="my-2 text-xl w-99p nav-mobile2 p-2 mx-2"><a href="index.html#sobre-nosotros">Sobre nosotros</a></li>
+                <li class="mb-2 text-xl w-99p nav-mobile2 p-2 mx-2"><a href="index.html#menu-bar">Menu</a></li>
+                <li class="text-xl w-99p nav-mobile2 p-2 mx-2"><a href="index.html#encuesta">Encuesta</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="mt-24">
+        <section>
+            <article class="mx-auto max-w-1250px h-auto flex flex-col items-center lg:flex-row lg:justify-between lg:items-start">
+
+                <article>
+                    <div class="mb-8 mx-2 max-w-lg">
+    
+                        <h2 class="text-2xl font-bold sm:text-3xl md:text-4xl flex items-center">
+                            <span class="mr-2">Encuesta </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                                <path fill="#059669"
+                                    d="M6 4v4h12V4h2.007c.548 0 .993.445.993.993v16.014a.994.994 0 0 1-.993.993H3.993A.993.993 0 0 1 3 21.007V4.993C3 4.445 3.445 4 3.993 4zm3 13H7v2h2zm0-3H7v2h2zm0-3H7v2h2zm7-9v4H8V2z" />
+                            </svg>
+                        </h2>
+    
+                        <article class="flex justify-start gap-2 ml-4 my-3 w-1/2 ">
+                            <div class="lineas linea-1 bg-emerald-300" style="width: 5%; height: 3px; "></div>
+                            <div class="lineas linea-2 bg-white" style="width: 4%; height: 3px; "></div>
+                            <div class="lineas linea-3 bg-emerald-300" style="width: 10%; height: 3px; "></div>
+                        </article>
+    
+                        <p class="text-lg">
+                            <span class="font-bold">Rellená el formulario</span> de forma anonima <em>(opcional)</em> y
+                            ayudanos a <span class="font-bold">seguir
+                                creciendo</span>. <br>
+                            Muchas gracias, <span
+                                class="font-bold text-xl bg-gradient-to-r from-green-600 via-green-400 to-emerald-600 inline-block text-transparent bg-clip-text">Cervecería
+                                Klug Gebrau</span>
+                        </p>
+    
+                        <img src="./assets/encuesta.png" alt="" width="400" height="600">
+    
+                    </div>
+
+                    <div class="mx-auto max-w-1250px flex-col items-center px-3 lg:flex-row lg:justify-between hidden xl:flex">
+                
+                        <article>
+                            <h2 class="text-xl font-bold text-center 500px:text-start sm:text-2xl md:text-3xl">INFORMACIÓN</h2>
+                            <article class="hidden sm:flex justify-start gap-2 mt-3 w-1/2 ">
+                                <div class="lineas linea-1 bg-emerald-300"
+                                    style="width: 5%; height: 3px; "></div>
+                                <div class="lineas linea-2 bg-white"
+                                    style="width: 4%; height: 3px; "></div>
+                                <div class="lineas linea-3 bg-emerald-300"
+                                    style="width: 10%; height: 3px; "></div>
+                            </article>
+                            <div class="grid grid-cols-1 my-5 500px:grid-cols-2 500px:justify-between">
+                                <div class="flex flex-col mb-3 max-w-64 500px:mr-3 ">
+                                    <h3 class="flex items-center my-4">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                                            <path fill="none" stroke="#059669" stroke-width="2"
+                                                d="M15 15h4l3 7H2l3-7h4m4-7a1 1 0 1 1-2 0a1 1 0 0 1 2 0M6 8c0 5 6 10 6 10s6-5 6-10c0-3.417-2.686-6-6-6S6 4.583 6 8Z" />
+                                        </svg>
+                                        <span class="font-semibold text-emerald-400 text-lg ml-1"> Dónde estamos</span>
+                                    </h3>
+                                    <p class="text-gray-200">Cabo O. Labalta 440, Concepcion del uruguay, Entre Ríos</p>
+                                </div>
+            
+                                <div class="flex flex-col mb-3">
+                                    <h3 class="flex items-center my-4">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                                            <g fill="none" stroke="#059669" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2">
+                                                <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0-18 0" />
+                                                <path d="M12 7v5l3 3" />
+                                            </g>
+                                        </svg>
+                                        <span class="font-semibold text-emerald-400 text-lg ml-1"> Nuestros horarios</span>
+                                    </h3>
+                                    <p class="text-gray-200">Miercoles a Domingos <br>20:00-01:30</p>
+                                </div>
+            
+                                <div class="flex flex-col mb-3 500px:mb-0">
+                                    <h3 class="flex items-center my-4">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                                            <g fill="none" stroke="#059669" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="1.5" color="#059669">
+                                                <rect width="17.5" height="20" x="4" y="2" rx="4" />
+                                                <path
+                                                    d="M10.59 13.74c-.629.422-2.277 1.282-1.273 2.358c.49.526 1.037.902 1.723.902h3.92c.686 0 1.233-.376 1.723-.902c1.004-1.076-.644-1.936-1.273-2.357a4.29 4.29 0 0 0-4.82 0M15 9a2 2 0 1 1-4 0a2 2 0 0 1 4 0M5 6H2.5M5 12H2.5M5 18H2.5" />
+                                            </g>
+                                        </svg>
+                                        <span class="font-semibold text-emerald-400 text-lg ml-1"> Contacto</span>
+                                    </h3>
+                                    <p class="text-gray-200">+54 3442 42-1243</p>
+                                    <p class="text-gray-200">kluggebrau@gmail.com</p>
+                                </div>
+            
+                                <div class="flex flex-col">
+                                    <h3 class="flex items-center my-4">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 256 256">
+                                            <path fill="#059669"
+                                                d="M168 132.69L214.08 115l.33-.13a16 16 0 0 0-1.41-29.8L52.92 32.8A15.95 15.95 0 0 0 32.8 52.92L85.07 213a15.82 15.82 0 0 0 14.41 11h.78a15.84 15.84 0 0 0 14.61-9.59l.13-.33L132.69 168L184 219.31a16 16 0 0 0 22.63 0l12.68-12.68a16 16 0 0 0 0-22.63ZM195.31 208L144 156.69a16 16 0 0 0-26 4.93c0 .11-.09.22-.13.32l-17.65 46L48 48l159.85 52.2l-45.95 17.64l-.32.13a16 16 0 0 0-4.93 26L208 195.31Z" />
+                                        </svg>
+                                        <span class="font-semibold text-emerald-400 text-lg ml-1"> Seguinos en redes</span>
+                                    </h3>
+                                    <div class="flex">
+                                        <a href="https://facebook.com" target="_blank" class="mr-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                                                <path fill="rgb(229 231 235)"
+                                                    d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3" />
+                                            </svg>
+                                        </a>
+                                        <a href="https://instagram.com" target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                                                <path fill="rgb(229 231 235)"
+                                                    d="M20.9 2H3.1A1.1 1.1 0 0 0 2 3.1v17.8A1.1 1.1 0 0 0 3.1 22h9.58v-7.75h-2.6v-3h2.6V9a3.64 3.64 0 0 1 3.88-4a20.26 20.26 0 0 1 2.33.12v2.7H17.3c-1.26 0-1.5.6-1.5 1.47v1.93h3l-.39 3H15.8V22h5.1a1.1 1.1 0 0 0 1.1-1.1V3.1A1.1 1.1 0 0 0 20.9 2" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+        
+                    </div>
+                </article>
+
+                <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSeI8FBmZD-5DW-6LooiNLy-xOBTqn6uVyi2dj_7KFi1rMg3DA/viewform?embedded=true"
+                    width="640" height="1000" frameborder="0" marginheight="0" marginwidth="0"
+                    class="max-w-full aspect-video iframe2">
+                </iframe>
+            </article>
+        </section>
+    </main>
+
+    <footer id="footer" class="text-white bg-black3 p-8 mt-12">
+        <article class="grid grid-cols-1 justify-between mx-auto max-w-1250px 500px:grid-cols-2 970px:grid-cols-4">
+            <div class="500px:mb-3 970px:mb-0">
+                <h3 class="text-lg font-bold">Acceso rápido</h3>
+                <ul>
+                    <li><a href="#home">&bullet; Inicio</a></li>
+                    <li><a href="#about">&bullet; Sobre nosotros</a></li>
+                    <li><a href="#services">&bullet; Menú</a></li>
+                    <li><a href="#contact">&bullet; Encuesta</a></li>
+                </ul>
+            </div>
+
+            <div class="my-3 500px:my-0 500px:mb-3 970px:mb-0">
+                <h3 class="text-lg font-bold">Contactanos</h3>
+                <p>kluggebrau@gmail.com</p>
+                <p>+54 3442 43-1242</p>
+            </div>
+
+            <div class="mb-3 500px:mb-0">
+                <h3 class="text-lg font-bold">Seguinos</h3>
+                <div class="flex">
+                    <a href="https://facebook.com" target="_blank" class="mr-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                            <path fill="#059669"
+                                d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3" />
+                        </svg>
+                    </a>
+                    <a href="https://instagram.com" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                            <path fill="#059669"
+                                d="M20.9 2H3.1A1.1 1.1 0 0 0 2 3.1v17.8A1.1 1.1 0 0 0 3.1 22h9.58v-7.75h-2.6v-3h2.6V9a3.64 3.64 0 0 1 3.88-4a20.26 20.26 0 0 1 2.33.12v2.7H17.3c-1.26 0-1.5.6-1.5 1.47v1.93h3l-.39 3H15.8V22h5.1a1.1 1.1 0 0 0 1.1-1.1V3.1A1.1 1.1 0 0 0 20.9 2" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex items-center ml-2">
+                <img src="assets/logo.png" alt="logo kluggebrau" width="78" height="78">
+                <p class="ml-2 font-Shadows logo font-medium">
+                    <span
+                        class="text-3xl font-semibold bg-gradient-to-r from-green-600 via-green-400 to-emerald-600 inline-block text-transparent bg-clip-text">Klug
+                        Gebrau</span><br>Cerveza Artesanal
+                </p>
+            </div>
+        </article>
+    </footer>
+
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>

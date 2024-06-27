@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Merienda:wght@300..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+ html {
+  font-family: "Quicksand";
+  scroll-behavior: smooth;
+ }
+ .hero-image {
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+   url(./assets/hero.jpg);
+ }
+ .btnreserva {
+  background: #348f50;
+  background: -webkit-linear-gradient(to right, #56b4d3, #348f50);
+  background: linear-gradient(to right, #56b4d3, #348f50);
+  transition: all 0.5s ease;
+ }
+ .btnreserva:hover {
+  scale: 105%;
+ }
+ .hovAnim::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: rgb(74 222 128);
+  transition: width 0.3s;
+ }
+ .hovAnim:hover::after {
+  width: 100%;
+ }
+ .logo {
+  font-size: 26px;
+  line-height: 2rem;
+ }
+ .nav-mobile {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+ }
+ .nav-mobile2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
+ }
+ .hero-text {
+  height: 47dvh;
+ }
+ .bg-header {
+  background-color: #00000036;
+  backdrop-filter: blur(3px);
+  z-index: 9999;
+ }
+ .active1 {
+  border-color: rgb(52 211 153);
+ }
+ .menu {
+  display: none;
+ }
+ .menu.active {
+  display: grid;
+ }
+ #hace-tu-pedido {
+  border-top: 12px solid #0a0a0a;
+  border-bottom: 12px solid #0a0a0a;
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+   url(./assets/hacetupedido.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+ .wpp {
+  transition: scale 0.3s ease;
+ }
+ .wpp:hover {
+  scale: 105%;
+ }
+ .gente {
+  right: 20%;
+  top: 80px;
+ }
+ .rojop {
+  width: 400px;
+  height: 300px;
+ }
+ .azul {
+  position: absolute;
+  transform: translateY(80px) translateX(80px);
+  width: 420px;
+  height: 300px;
+ }
+ .contacto {
+  height: auto;
+ }
+/* La barra de desplazamiento general para el elemento con clase iframe */
+.iframe2::-webkit-scrollbar {
+  width: 12px; /* Ancho de la barra de desplazamiento vertical */
+  height: 12px; /* Alto de la barra de desplazamiento horizontal */
+}
+
+/* La parte de la pista de la barra de desplazamiento para el elemento con clase iframe */
+:-webkit-scrollbar-track {
+  background: red; 
+}
+
+/* La parte del thumb de la barra de desplazamiento para el elemento con clase iframe */
+::-webkit-scrollbar-thumb {
+  background: blue; 
+}
+
+/* Cuando el usuario pasa el mouse sobre el thumb para el elemento con clase iframe */
+::-webkit-scrollbar-thumb:hover {
+  background: green; 
+}
+}
