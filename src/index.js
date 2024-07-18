@@ -3,7 +3,7 @@ import menuHamburguesa from "./js/menu_hamburguesa.js";
 
 const d = document;
 
-d.addEventListener("DOMContentLoaded", (event) => {
- menuHamburguesa("#boton", "#menu");
+d.addEventListener("DOMContentLoaded", (evenst) => {
+ menuHamburguesa("#boton", "#menu", "#li-mob");
  menuComida(".btm", ".btn", ".menu");
 });

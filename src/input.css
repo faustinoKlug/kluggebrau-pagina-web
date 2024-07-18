@@ -13,13 +13,27 @@
  }
  .hero-image {
   background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-   url(./assets/hero.jpg);
+   url(./assets/hero3.jpg);
  }
  .btnreserva {
   background: #348f50;
   background: -webkit-linear-gradient(to right, #56b4d3, #348f50);
   background: linear-gradient(to right, #56b4d3, #348f50);
   transition: all 0.5s ease;
+ }
+ .prueba {
+  position: absolute;
+  top: 330px;
+  left: -70px;
+  width: 260px;
+ }
+ .prueba2 {
+  position: absolute;
+  top: 900px;
+  z-index: -1;
+  right: -100px;
+  width: 350px;
+  background-color: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9))
  }
  .btnreserva:hover {
   scale: 105%;
@@ -91,27 +105,10 @@
   width: 420px;
   height: 300px;
  }
- .contacto {
-  height: auto;
+ #encuesta {
+  background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)),
+   url(./assets/encuesta3.jpg);
+  border-bottom: 16px solid #0C0A0A;
+  border-top: 16px solid #0C0A0A;
  }
-/* La barra de desplazamiento general para el elemento con clase iframe */
-.iframe2::-webkit-scrollbar {
-  width: 12px; /* Ancho de la barra de desplazamiento vertical */
-  height: 12px; /* Alto de la barra de desplazamiento horizontal */
-}
-
-/* La parte de la pista de la barra de desplazamiento para el elemento con clase iframe */
-:-webkit-scrollbar-track {
-  background: red; 
-}
-
-/* La parte del thumb de la barra de desplazamiento para el elemento con clase iframe */
-::-webkit-scrollbar-thumb {
-  background: blue; 
-}
-
-/* Cuando el usuario pasa el mouse sobre el thumb para el elemento con clase iframe */
-::-webkit-scrollbar-thumb:hover {
-  background: green; 
-}
 }

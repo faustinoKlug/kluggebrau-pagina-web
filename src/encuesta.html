@@ -16,7 +16,7 @@
     <header class="mx-auto w-full flex items-center flex-col bg-header sticky top-0">
 
         <!-- DESKTOP -->
-        <div class="hidden py-2 justify-between md:flex max-w-1250px mx-auto w-full">
+        <div class="hidden py-2 justify-between 815px:flex max-w-1250px mx-auto w-full">
 
             <!-- LOGO -->
             <div class="flex items-center ml-2">
@@ -32,14 +32,15 @@
             <nav class="flex items-center mr-2">
                 <ul class="flex">
                     <li class="hovAnim text-lg"><a href="index.html#hero">Inicio</a></li>
-                    <li class="hovAnim mx-7 text-lg"><a href="index.html#sobre-nosotros">Sobre nosotros</a></li>
-                    <li class="hovAnim mr-7 text-lg"><a href="index.html#menu-bar">Menú</a></li>
-                    <li class="hovAnim text-lg"><a href="index.html#encuesta">Encuesta</a></li>
+                    <li class="hovAnim mx-7 text-lg"><a href="index.html#sobre-nosotros">Nosotros</a></li>
+                    <li class="hovAnim text-lg"><a href="index.html#menu-bar">Menú</a></li>
+                    <li class="hovAnim mx-7 text-lg"><a href="index.html#encuesta">Encuesta</a></li>
+                    <li class="hovAnim text-lg mr-2"><a href="index.html#contacto">Contacto</a></li>
                 </ul>
             </nav>
 
             <!-- BOTON -->
-            <div class="hidden items-center mr-2 970px:flex">
+            <div class="hidden items-center mr-2 lg:flex">
                 <button class="btnreserva font-bold text-xl h-auto px-6 py-3 rounded-md"><a
                         href="https://wa.link/vuvszj" target="_blank">HACÉ TU RESERVA</a></button>
             </div>
@@ -47,11 +48,11 @@
         </div>
 
         <!-- MOBILE -->
-        <div class="flex py-2 justify-between md:hidden max-w-1250px w-full">
+        <div class="flex py-2 justify-between 815px:hidden max-w-1250px w-full">
 
             <!-- LOGO -->
             <div class="flex items-center ml-2">
-                <img src="assets/logo.png" alt="logo" width="78" height="78">
+                <img src="assets/logo.png" alt="logo" width="78" height="78" class="hidden 230px:inline">
                 <p class="ml-2 font-Shadows text-xl 360px:logo font-medium">
                     <span
                         class="logo 360px:text-3xl font-bold bg-gradient-to-r from-green-600 via-green-400 to-emerald-600 inline-block text-transparent bg-clip-text">Klug
@@ -71,12 +72,14 @@
         </div>
 
         <!-- MENU DE NAVEGACION MOBILE-->
-        <nav class="mb-4 mt-3 hidden md:hidden w-full" id="menu">
+        <nav class="mb-4 mt-3 hidden 815px:hidden w-full h-dvh" id="menu">
             <ul>
-                <li class="text-xl w-99p nav-mobile p-2 mx-2"><a href="index.html#hero">Inicio</a></li>
-                <li class="my-2 text-xl w-99p nav-mobile2 p-2 mx-2"><a href="index.html#sobre-nosotros">Sobre nosotros</a></li>
-                <li class="mb-2 text-xl w-99p nav-mobile2 p-2 mx-2"><a href="index.html#menu-bar">Menu</a></li>
-                <li class="text-xl w-99p nav-mobile2 p-2 mx-2"><a href="index.html#encuesta">Encuesta</a></li>
+                <li class="text-xl w-99p nav-mobile p-2 mx-2"><a href="index.html#hero" id="li-mob">Inicio</a></li>
+                <li class="my-2 text-xl w-99p nav-mobile2 p-2 mx-2"><a href="index.html#sobre-nosotros" id="li-mob">Nosotros</a>
+                </li>
+                <li class="text-xl w-99p nav-mobile2 p-2 mx-2"><a href="index.html#menu-bar" id="li-mob">Menu</a></li>
+                <li class="my-2 text-xl w-99p nav-mobile2 p-2 mx-2"><a href="index.html#encuesta" id="li-mob">Encuesta</a></li>
+                <li class="text-xl w-99p nav-mobile2 p-2 mx-2"><a href="index.html#contacto" id="li-mob">Contacto</a></li>
             </ul>
         </nav>
 
@@ -213,10 +216,10 @@
             <div class="500px:mb-3 970px:mb-0">
                 <h3 class="text-lg font-bold">Acceso rápido</h3>
                 <ul>
-                    <li><a href="#home">&bullet; Inicio</a></li>
-                    <li><a href="#about">&bullet; Sobre nosotros</a></li>
-                    <li><a href="#services">&bullet; Menú</a></li>
-                    <li><a href="#contact">&bullet; Encuesta</a></li>
+                    <li><a href="#">&bullet; Inicio</a></li>
+                    <li><a href="#">&bullet; Sobre nosotros</a></li>
+                    <li><a href="#">&bullet; Menú</a></li>
+                    <li><a href="#">&bullet; Encuesta</a></li>
                 </ul>
             </div>
 
@@ -229,13 +232,13 @@
             <div class="mb-3 500px:mb-0">
                 <h3 class="text-lg font-bold">Seguinos</h3>
                 <div class="flex">
-                    <a href="https://facebook.com" target="_blank" class="mr-2">
+                    <a href="https://www.instagram.com/kluggebrau/" target="_blank" class="mr-2">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
                             <path fill="#059669"
                                 d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3" />
                         </svg>
                     </a>
-                    <a href="https://instagram.com" target="_blank">
+                    <a href="https://www.facebook.com/kluggebrau/" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
                             <path fill="#059669"
                                 d="M20.9 2H3.1A1.1 1.1 0 0 0 2 3.1v17.8A1.1 1.1 0 0 0 3.1 22h9.58v-7.75h-2.6v-3h2.6V9a3.64 3.64 0 0 1 3.88-4a20.26 20.26 0 0 1 2.33.12v2.7H17.3c-1.26 0-1.5.6-1.5 1.47v1.93h3l-.39 3H15.8V22h5.1a1.1 1.1 0 0 0 1.1-1.1V3.1A1.1 1.1 0 0 0 20.9 2" />

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="overflow-x-hidden">
 
 <head>
     <meta charset="UTF-8">
@@ -19,7 +19,7 @@
         <header class="mx-auto w-full flex items-center flex-col bg-header fixed top-0">
 
             <!-- DESKTOP -->
-            <div class="hidden py-2 justify-between md:flex max-w-1250px mx-auto w-full">
+            <div class="hidden py-2 justify-between 815px:flex max-w-1250px mx-auto w-full">
 
                 <!-- LOGO -->
                 <div class="flex items-center ml-2">
@@ -35,10 +35,10 @@
                 <nav class="flex items-center mr-2">
                     <ul class="flex">
                         <li class="hovAnim text-lg"><a href="#hero">Inicio</a></li>
-                        <li class="hovAnim mx-7 text-lg"><a href="#sobre-nosotros">Sobre nosotros</a></li>
+                        <li class="hovAnim mx-7 text-lg"><a href="#sobre-nosotros">Nosotros</a></li>
                         <li class="hovAnim text-lg"><a href="#menu-bar">Menú</a></li>
                         <li class="hovAnim mx-7 text-lg"><a href="#encuesta">Encuesta</a></li>
-                        <li class="hovAnim text-lg"><a href="#contacto">Contacto</a></li>
+                        <li class="hovAnim text-lg mr-2"><a href="#contacto">Contacto</a></li>
                     </ul>
                 </nav>
 
@@ -51,7 +51,7 @@
             </div>
 
             <!-- MOBILE -->
-            <div class="flex py-2 justify-between md:hidden max-w-1250px w-full">
+            <div class="flex py-2 justify-between 815px:hidden max-w-1250px w-full">
 
                 <!-- LOGO -->
                 <div class="flex items-center ml-2">
@@ -75,14 +75,16 @@
             </div>
 
             <!-- MENU DE NAVEGACION MOBILE-->
-            <nav class="mb-4 mt-3 hidden md:hidden w-full" id="menu">
+            <nav class="mb-4 mt-3 hidden 815px:hidden w-full h-dvh" id="menu">
                 <ul>
-                    <li class="text-xl w-99p nav-mobile p-2 mx-2"><a href="#hero">Inicio</a></li>
-                    <li class="my-2 text-xl w-99p nav-mobile2 p-2 mx-2"><a href="#sobre-nosotros">Sobre nosotros</a>
+                    <li class="text-xl w-99p nav-mobile p-2 mx-2"><a href="#hero" id="li-mob">Inicio</a></li>
+                    <li class="my-2 text-xl w-99p nav-mobile2 p-2 mx-2"><a href="#sobre-nosotros"
+                            id="li-mob">Nosotros</a>
                     </li>
-                    <li class="text-xl w-99p nav-mobile2 p-2 mx-2"><a href="#menu-bar">Menu</a></li>
-                    <li class="my-2 text-xl w-99p nav-mobile2 p-2 mx-2"><a href="#encuesta">Encuesta</a></li>
-                    <li class="text-xl w-99p nav-mobile2 p-2 mx-2"><a href="#contacto">Contacto</a></li>
+                    <li class="text-xl w-99p nav-mobile2 p-2 mx-2"><a href="#menu-bar" id="li-mob">Menu</a></li>
+                    <li class="my-2 text-xl w-99p nav-mobile2 p-2 mx-2"><a href="#encuesta" id="li-mob">Encuesta</a>
+                    </li>
+                    <li class="text-xl w-99p nav-mobile2 p-2 mx-2"><a href="#contacto" id="li-mob">Contacto</a></li>
                 </ul>
             </nav>
 
@@ -104,10 +106,13 @@
             </article>
         </section>
 
+        <img src="./assets/pruebae.png" alt="" class="prueba -z-10 hidden xl:inline-block">
+        <img src="./assets/vista-superior-pizza-horneada.png" alt="" class="prueba2 hidden xl:inline-block">
+
     </div>
 
     <main class="">
-        <section class="text-white mx-4 my-32" id="sobre-nosotros">
+        <section id="sobre-nosotros" class="text-white mx-4 my-32">
 
             <article class="mx-auto max-w-1250px relative">
 
@@ -129,20 +134,25 @@
                                         d="M24 0H4a3 3 0 0 0-3 3v4a4 4 0 0 0 7.701 1.509C9.051 8.811 9.502 9 10 9c.677 0 1.273-.338 1.635-.853A3.988 3.988 0 0 0 15 10a3.98 3.98 0 0 0 3.176-1.593A2.496 2.496 0 0 0 20.5 10c.949 0 1.765-.535 2.188-1.314c.398.195.839.314 1.312.314a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3" />
                                 </svg>
                             </h2>
-    
+
                             <div class="flex justify-center gap-2 mt-2" style="width: 40%;">
                                 <div class="lineas linea-1 bg-emerald-300" style="width: 5%; height: 3px; "></div>
                                 <div class="lineas linea-2 bg-white" style="width: 4%; height: 3px; "></div>
                                 <div class="lineas linea-3 bg-emerald-300" style="width: 10%; height: 3px; "></div>
                             </div>
-    
+
                             <p class="mt-4 max-w-550px lg:text-lg">
-                                Somos un <span class="font-bold">emprendimiento familiar</span> llevado a cabo por un padre
-                                y sus dos hijos, unidos por la <span class="font-bold">pasión por la cerveza artesanal y la
+                                Somos un <span class="font-bold">emprendimiento familiar</span> llevado a cabo por un
+                                padre
+                                y sus dos hijos, unidos por la <span class="font-bold">pasión por la cerveza artesanal y
+                                    la
                                     buena comida</span>. Nuestro emprendimiento familiar se centra en ofrecer <span
-                                    class="font-bold">cervezas artesanales de alta calidad y una experiencia gastronómica
-                                    excepcional</span>. Nuestra oferta gastronómica está diseñada para complementar nuestras
-                                cervezas a la perfección. Cada plato está pensado para resaltar los sabores y brindar una
+                                    class="font-bold">cervezas artesanales de alta calidad y una experiencia
+                                    gastronómica
+                                    excepcional</span>. Nuestra oferta gastronómica está diseñada para complementar
+                                nuestras
+                                cervezas a la perfección. Cada plato está pensado para resaltar los sabores y brindar
+                                una
                                 experiencia única.
                             </p>
                         </div>
@@ -176,7 +186,7 @@
             </article>
         </section>
 
-        <section class="text-white my-32" id="menu-bar">
+        <section id="menu-bar" class="text-white mt-32">
             <article class="mx-auto max-w-1250px">
 
                 <div class="flex flex-col items-center">
@@ -510,13 +520,13 @@
             </article>
         </section>
 
-        <section id="encuesta" class="text-white mb-32 lg:mb-48">
+        <section id="encuesta" class="text-white mb-32 lg:mt-32 lg:mb-44 bg-no-repeat bg-cover bg-center">
 
             <!-- MOBILE -->
             <article
                 class="mx-auto px-2 flex flex-col max-w-500px md:max-w-full md:flex-row md:justify-center md:items-center lg:hidden">
 
-                <div class="flex justify-center md:mr-4">
+                <div class="flex justify-center md:mr-4 mt-4">
                     <figure>
                         <img src="./assets/gente2.PNG" alt="" width="360" height="350">
                     </figure>
@@ -551,7 +561,7 @@
             <!-- DESKTOP -->
             <article class="mx-auto max-w-1250px px-4 hidden lg:flex justify-between items-center w-full">
 
-                <div>
+                <div class="mb-0 lg:mb-20">
                     <figure class="">
                         <img src="./assets/gente1.PNG" alt="personas" class="azul">
                     </figure>
@@ -561,7 +571,7 @@
                     </figure>
                 </div>
 
-                <div class="my-4 flex flex-col items-start lg:mt-32">
+                <div class="my-4 flex flex-col items-start lg:my-28">
 
                     <h2 class="text-left font-bold text-3xl lg:text-4xl">¡Te <span
                             class="text-emerald-400">necesitamos</span>!</h2>
@@ -591,7 +601,7 @@
 
         </section>
 
-        <section id="contacto" class="w-full contacto text-white mb-40 overflow-hidden ">
+        <section id="contacto" class="w-full contacto text-white mb-36 overflow-hidden ">
             <article class="mx-auto max-w-1250px flex flex-col items-center px-3 lg:flex-row lg:justify-between">
 
                 <article>
@@ -684,10 +694,10 @@
             <div class="500px:mb-3 970px:mb-0">
                 <h3 class="text-lg font-bold">Acceso rápido</h3>
                 <ul>
-                    <li><a href="#home">&bullet; Inicio</a></li>
-                    <li><a href="#about">&bullet; Sobre nosotros</a></li>
-                    <li><a href="#services">&bullet; Menú</a></li>
-                    <li><a href="#contact">&bullet; Encuesta</a></li>
+                    <li><a href="#">&bullet; Inicio</a></li>
+                    <li><a href="#">&bullet; Sobre nosotros</a></li>
+                    <li><a href="#">&bullet; Menú</a></li>
+                    <li><a href="#">&bullet; Encuesta</a></li>
                 </ul>
             </div>
 
@@ -700,13 +710,13 @@
             <div class="mb-3 500px:mb-0">
                 <h3 class="text-lg font-bold">Seguinos</h3>
                 <div class="flex">
-                    <a href="https://facebook.com" target="_blank" class="mr-2">
+                    <a href="https://www.instagram.com/kluggebrau/" target="_blank" class="mr-2">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
                             <path fill="#059669"
                                 d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3" />
                         </svg>
                     </a>
-                    <a href="https://instagram.com" target="_blank">
+                    <a href="https://www.facebook.com/kluggebrau/" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
                             <path fill="#059669"
                                 d="M20.9 2H3.1A1.1 1.1 0 0 0 2 3.1v17.8A1.1 1.1 0 0 0 3.1 22h9.58v-7.75h-2.6v-3h2.6V9a3.64 3.64 0 0 1 3.88-4a20.26 20.26 0 0 1 2.33.12v2.7H17.3c-1.26 0-1.5.6-1.5 1.47v1.93h3l-.39 3H15.8V22h5.1a1.1 1.1 0 0 0 1.1-1.1V3.1A1.1 1.1 0 0 0 20.9 2" />
@@ -725,7 +735,6 @@
             </div>
         </article>
     </footer>
-
 
     <script src="index.js" type="module"></script>
 </body>
