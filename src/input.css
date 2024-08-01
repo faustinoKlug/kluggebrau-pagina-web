@@ -13,7 +13,7 @@
  }
  .hero-image {
   background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-   url(./assets/hero3.jpg);
+   url(./assets/hero3.webp);
  }
  .btnreserva {
   background: #348f50;
@@ -80,7 +80,7 @@
   border-top: 12px solid #0a0a0a;
   border-bottom: 12px solid #0a0a0a;
   background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-   url(./assets/hacetupedido.jpg);
+   url(./assets/hacetupedido.webp);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -107,8 +107,10 @@
  }
  #encuesta {
   background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)),
-   url(./assets/encuesta3.jpg);
+   url(./assets/encuesta3.webp);
   border-bottom: 16px solid #0C0A0A;
   border-top: 16px solid #0C0A0A;
+  background-repeat: no-repeat;
+  background-size: cover;
  }
 }

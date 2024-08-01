@@ -459,29 +459,13 @@ html {
 
 .hero-image {
   background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-   url(./assets/hero3.jpg);
+   url(./assets/hero3.webp);
 }
 
 .btnreserva {
   background: #348f50;
   background: linear-gradient(to right, #56b4d3, #348f50);
   transition: all 0.5s ease;
-}
-
-.prueba {
-  position: absolute;
-  top: 330px;
-  left: -70px;
-  width: 260px;
-}
-
-.prueba2 {
-  position: absolute;
-  top: 900px;
-  z-index: -1;
-  right: -100px;
-  width: 350px;
-  background-color: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9))
 }
 
 .btnreserva:hover {
@@ -541,7 +525,7 @@ html {
   border-top: 12px solid #0a0a0a;
   border-bottom: 12px solid #0a0a0a;
   background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-   url(./assets/hacetupedido.jpg);
+   url(./assets/hacetupedido.webp);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -569,9 +553,11 @@ html {
 
 #encuesta {
   background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)),
-   url(./assets/encuesta3.jpg);
+   url(./assets/encuesta3.webp);
   border-bottom: 16px solid #0C0A0A;
   border-top: 16px solid #0C0A0A;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 *, ::before, ::after{
@@ -696,10 +682,6 @@ html {
 
 .top-0{
   top: 0px;
-}
-
-.-z-10{
-  z-index: -10;
 }
 
 .m-4{
@@ -1510,10 +1492,6 @@ html {
 }
 
 @media (min-width: 1280px){
-  .xl\:inline-block{
-    display: inline-block;
-  }
-
   .xl\:flex{
     display: flex;
   }
