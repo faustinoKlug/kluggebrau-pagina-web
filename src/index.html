@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./hamburgers.css">
     <link rel="icon" href="./assets/logo.webp">
     <link rel="author" content="Faustino Klug">
-    <link rel="canonical" href="https://faustinoklug.netlify.app/">
+    <link rel="canonical" href="https://kluggebrau.netlify.app/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="language" content="spanish">
@@ -30,9 +30,11 @@
 
 </head>
 
-<body class="bg-black1 relative">
+<body class="bg-[#131313] relative" id="inicio">
 
-    <div class="bg-cover bg-no-repeat bg-center hero-image text-white flex flex-col items-center pt-20" id="hero">
+    <div class="bg-cover bg-center bg-no-repeat hero-image text-white flex flex-col items-center pt-20 relative" id="hero">
+
+        <img src="assets/banner-hero.png" alt="" class="absolute max-w-none object-cover w-full hidden xl:block top-[380px] z-[70]">
 
         <header class="mx-auto w-full flex items-center flex-col bg-header fixed top-0">
 
@@ -44,7 +46,7 @@
                     <img src="assets/logo.webp" alt="logo kluggebrau" width="78" height="78">
                     <p class="ml-2 font-Shadows logo font-medium">
                         <span
-                            class="text-3xl font-semibold bg-gradient-to-r from-green-600 via-green-400 to-emerald-600 inline-block text-transparent bg-clip-text">Klug
+                            class="text-3xl mx- font-semibold bg-gradient-to-r from-green-600 via-green-400 to-emerald-600 inline-block text-transparent bg-clip-text">Klug
                             Gebrau</span><br>Cerveza Artesanal
                     </p>
                 </div>
@@ -52,19 +54,12 @@
                 <!-- MENU DE NAVEGACION -->
                 <nav class="flex items-center mr-2">
                     <ul class="flex">
-                        <li class="hovAnim text-lg"><a href="#hero">Inicio</a></li>
-                        <li class="hovAnim mx-7 text-lg"><a href="#sobre-nosotros">Nosotros</a></li>
-                        <li class="hovAnim text-lg"><a href="#menu-bar">Menú</a></li>
-                        <li class="hovAnim mx-7 text-lg"><a href="#encuesta">Encuesta</a></li>
-                        <li class="hovAnim text-lg mr-2"><a href="#contacto">Contacto</a></li>
+                        <li class="hovAnim text-lg"><a href="#inicio">Inicio</a></li>
+                        <li class="hovAnim mx-10 text-lg"><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+                        <li class="hovAnim text-lg"><a href="menu.html">Menú</a></li>
+                        <li class="hovAnim ml-10 text-lg mr-2"><a href="#informacion">Información</a></li>
                     </ul>
                 </nav>
-
-                <!-- BOTON -->
-                <div class="hidden items-center mr-2 lg:flex">
-                    <button class="btnreserva font-bold text-xl h-auto px-6 py-3 rounded-md"><a
-                            href="https://wa.link/vuvszj" target="_blank">HACÉ TU RESERVA</a></button>
-                </div>
 
             </div>
 
@@ -95,58 +90,66 @@
             <!-- MENU DE NAVEGACION MOBILE-->
             <nav class="mb-4 mt-3 hidden 815px:hidden w-full h-dvh" id="menu">
                 <ul>
-                    <li class="text-xl w-99p nav-mobile p-2 mx-2"><a href="#hero" id="li-mob">Inicio</a></li>
-                    <li class="my-2 text-xl w-99p nav-mobile2 p-2 mx-2"><a href="#sobre-nosotros"
-                            id="li-mob">Nosotros</a>
-                    </li>
-                    <li class="text-xl w-99p nav-mobile2 p-2 mx-2"><a href="#menu-bar" id="li-mob">Menu</a></li>
-                    <li class="my-2 text-xl w-99p nav-mobile2 p-2 mx-2"><a href="#encuesta" id="li-mob">Encuesta</a>
-                    </li>
-                    <li class="text-xl w-99p nav-mobile2 p-2 mx-2"><a href="#contacto" id="li-mob">Contacto</a></li>
+                    <li class="text-xl w-99p nav-mobile p-2 mx-2"><a href="#inicio" id="li-mob">Inicio</a></li>
+                    <li class="my-2 text-xl w-99p nav-mobile2 p-2 mx-2"><a href="#sobre-nosotros" id="li-mob">Sobre nosotros</a></li>
+                    <li class="text-xl w-99p nav-mobile2 p-2 mx-2"><a href="menu.html" id="li-mob">Menú</a></li>
+                    <li class="text-xl w-99p nav-mobile2 p-2 mx-2"><a href="#informacion" id="li-mob">Información</a></li>
                 </ul>
             </nav>
 
         </header>
 
-        <section class="max-w-1250px flex items-center hero-text font-Caveat">
+        <section class="max-w-1250px flex items-center hero-text font-Caveat z-[70]">
             <article class="flex items-center flex-col">
 
                 <h1 class="text-4xl text-center font-medium font-Caveat first-letter:text-emerald-500 sm:text-5xl ">Klug
                     Gebrau</h1>
 
-                <p class="font-Quicksand text-center text-xl font-light mt-2 sm:text-2xl sm:mt-3">Fabricantes de
+                <p class="font-Quicksand text-center text-xl font-light mt-2 sm:text-2xl sm:mt-3 mb-[5px]">Fabricantes de
 
                     <span
                         class="font-bold bg-gradient-to-r from-green-400 via-emerald-300 to-green-300 inline-block text-transparent bg-clip-text text-lg sm:text-3xl">
                         cerveza artesanal
                     </span>
                 </p>
+
+                <a href="https://wa.me/message/7YNTWW6SB2L4A1" class="bouncing-element" target="_blank">
+                    <button
+                        class="flex items-center font-medium text-gray-900 rounded-xl bg-white px-3 py-1 justify-center font-bebas text-2xl lg:px-4 lg:py-2 lg:text-3xl tracking-wide">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="40" viewBox="-2 -2 24 24"
+                            class="mr-2">
+                            <g fill="#059669">
+                                <path
+                                    d="M9.516.012C4.206.262.017 4.652.033 9.929a9.798 9.798 0 0 0 1.085 4.465L.06 19.495a.387.387 0 0 0 .47.453l5.034-1.184a9.981 9.981 0 0 0 4.284 1.032c5.427.083 9.951-4.195 10.12-9.58C20.15 4.441 15.351-.265 9.516.011zm6.007 15.367a7.784 7.784 0 0 1-5.52 2.27a7.77 7.77 0 0 1-3.474-.808l-.701-.347l-3.087.726l.65-3.131l-.346-.672A7.62 7.62 0 0 1 2.197 9.9c0-2.07.812-4.017 2.286-5.48a7.85 7.85 0 0 1 5.52-2.271c2.086 0 4.046.806 5.52 2.27a7.672 7.672 0 0 1 2.287 5.48c0 2.052-.825 4.03-2.287 5.481z" />
+                                <path
+                                    d="m14.842 12.045l-1.931-.55a.723.723 0 0 0-.713.186l-.472.478a.707.707 0 0 1-.765.16c-.913-.367-2.835-2.063-3.326-2.912a.694.694 0 0 1 .056-.774l.412-.53a.71.71 0 0 0 .089-.726L7.38 5.553a.723.723 0 0 0-1.125-.256c-.539.453-1.179 1.14-1.256 1.903c-.137 1.343.443 3.036 2.637 5.07c2.535 2.349 4.566 2.66 5.887 2.341c.75-.18 1.35-.903 1.727-1.494a.713.713 0 0 0-.408-1.072" />
+                            </g>
+                        </svg>
+                        HACÉ TU PEDIDO
+                    </button>
+                </a>
             </article>
         </section>
 
+        <video muted autoplay loop>
+            <source src="assets/video-bg.mp4" type="video/mp4">
+        </video>
+
+        <div class="capa"></div>
     </div>
+ 
+    <main class="z-20">
+        <section id="sobre-nosotros" class="text-white mx-4 xl:mx-0 mb-[45px] relative my-[80px] sm:my-[110px] xl:my-[130px]">
 
-    <main class="">
-        <section id="sobre-nosotros" class="text-white mx-4 my-32">
-
-            <article class="mx-auto max-w-1250px relative">
+            <article class="mx-auto relative w-full max-w-1250px">
 
                 <div class="flex flex-col md:flex-row md:justify-between">
                     <div class="mb-4 mr-2 flex flex-col items-center justify-center md:mb-0">
                         <div class="">
                             <h2 class="mr-2 text-3xl lg:text-4xl flex">
-                                <span>Sobre <span class="text-emerald-400">nosotros </span></span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 36 36"
-                                    class="hidden 300px:flex ml-2">
-                                    <path fill="#FFAC33"
-                                        d="M31 5.718h-6v4h4s2 0 2 2v12c0 2-2 2-2 2h-4v4h6c2.206 0 4-1.794 4-4v-16c0-2.206-1.794-4-4-4" />
-                                    <path fill="#FFCC4D" d="M27 6H3v26a4 4 0 0 0 4 4h16a4 4 0 0 0 4-4z" />
-                                    <path fill="#F4900C"
-                                        d="M8.5 32a1 1 0 0 1-1-1V15a1 1 0 0 1 2 0v16a1 1 0 0 1-1 1m6.5 0a1 1 0 0 1-1-1V15a1 1 0 0 1 2 0v16a1 1 0 0 1-1 1m6.5 0a1 1 0 0 1-1-1V15a1 1 0 1 1 2 0v16a1 1 0 0 1-1 1" />
-                                    <path fill="#FFAC33"
-                                        d="M3 5v7.445c.59.344 1.268.555 2 .555a4 4 0 0 0 3.701-2.491c.35.302.801.491 1.299.491c.677 0 1.273-.338 1.635-.853A3.988 3.988 0 0 0 15 12a3.98 3.98 0 0 0 3.176-1.593A2.496 2.496 0 0 0 20.5 12c.949 0 1.765-.535 2.188-1.314l.147-.361a3.463 3.463 0 0 0 1.665.439c.981 0 1.865-.406 2.5-1.056V5z" />
-                                    <path fill="#EEE"
-                                        d="M24 0H4a3 3 0 0 0-3 3v4a4 4 0 0 0 7.701 1.509C9.051 8.811 9.502 9 10 9c.677 0 1.273-.338 1.635-.853A3.988 3.988 0 0 0 15 10a3.98 3.98 0 0 0 3.176-1.593A2.496 2.496 0 0 0 20.5 10c.949 0 1.765-.535 2.188-1.314c.398.195.839.314 1.312.314a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3" />
+                                <span class="mr-2">Sobre <span class="text-emerald-400">nosotros </span></span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 16 16">
+                                    <path fill="#059669" d="M15 14s1 0 1-1s-1-4-5-4s-5 3-5 4s1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276c.593.69.758 1.457.76 1.72l-.008.002l-.014.002zM11 7a2 2 0 1 0 0-4a2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0a3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904c.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724c.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0a3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4a2 2 0 0 0 0-4"/>
                                 </svg>
                             </h2>
 
@@ -156,7 +159,7 @@
                                 <div class="lineas linea-3 bg-emerald-300" style="width: 10%; height: 3px; "></div>
                             </div>
 
-                            <p class="mt-4 max-w-550px lg:text-lg">
+                            <p class="mt-4 mb-6 max-w-550px text-lg">
                                 Somos un <span class="font-bold">emprendimiento familiar</span> llevado a cabo por un
                                 padre
                                 y sus dos hijos, unidos por la <span class="font-bold">pasión por la cerveza artesanal y
@@ -170,462 +173,63 @@
                                 una
                                 experiencia única.
                             </p>
+
+                            <a href="sobre-nosotros.html" class="mx-auto font-bebas text-3xl tracking-wide text-black bg-white px-5 py-3 rounded-md flex justify-center wpp">
+                                <button class="flex items-center">
+                                    Conocé mas 
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 512 512">
+                                        <path fill="#000000" d="M459.15 269.75a133.197 133.197 0 0 1-55.862 179.975l-42.782 22.541l-10.52 5.533a71.28 71.28 0 0 1-62.966 1.685l-167.077-71.38l15.733-46.676l99.363 19.194l-51.458-97.78l-82.843-157.411l40.357-21.232l82.844 157.457l19.934-10.485l-36.521-69.445l40.335-21.22l36.52 69.445l19.935-10.485l-28.2-53.598l40.358-21.232l28.2 53.598l19.945-10.576l-19.354-36.886l40.346-21.174l19.354 36.885l54.348 103.301zM73.268 146.674a60.03 60.03 0 0 1 42.361-102.459a60.098 60.098 0 0 1 56.58 80.169l10.588 20.013A78.29 78.29 0 0 0 115.708 26a78.233 78.233 0 0 0-5.635 156.262L99.428 162.02a59.7 59.7 0 0 1-26.16-15.346"/>
+                                    </svg>
+                                </button>
+                            </a>
                         </div>
                     </div>
 
-                    <div class="flex justify-center">
-                        <img src="./assets/sobrenosotros.webp" alt="" width="500" height="300" class="object-cover">
+                    <div class="flex xl:hidden">
+                        <img src="./assets/sobrenosotros.jpeg" alt="" width="1500" height="1000" class="object-cover w-[700px] h-[500px]">
                     </div>
                 </div>
-
+                
             </article>
+
+            <div class="hidden xl:flex justify-center absolute right-0 top-[-65px]">
+                <img src="./assets/sobrenosotros.jpeg" alt="" width="1500" height="1000" class="object-cover w-[700px] h-[500px]">
+            </div>
 
         </section>
 
         <section id="hace-tu-pedido" class="text-white flex h-35dvh sm:h-40dvh">
             <article class="mx-auto max-w-1250px flex items-center justify-center flex-col">
-                <h2 class="font-bold text-3xl text-center sm:text-4xl">¿Qué <span
-                        class="text-emerald-400">esperás</span> para <span class="text-emerald-400">pedir</span>?</h2>
+                <h2 class="font-bold text-3xl text-center sm:text-4xl"><span
+                    class="text-emerald-400">¡Accedé</span> a nuestro <span class="text-emerald-400">menú!</span></h2>
 
-                <a href="https://wa.link/vuvszj" target="_blank" class="mt-3">
-                    <button class="wpp flex items-center bg-white text-black p-1 pr-2 rounded-md text-base sm:text-lg">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24">
-                            <path fill="#059669"
-                                d="M21.99 6.547a10.59 10.59 0 0 0-.103-1.282a4.312 4.312 0 0 0-.363-1.09A3.853 3.853 0 0 0 19.83 2.48a4.299 4.299 0 0 0-1.083-.362a10.523 10.523 0 0 0-1.292-.105c-.183-.007-.42-.01-.53-.01L7.077 2c-.11 0-.347.003-.53.01a10.565 10.565 0 0 0-1.282.103a4.312 4.312 0 0 0-1.09.363A3.854 3.854 0 0 0 2.48 4.17a4.303 4.303 0 0 0-.362 1.083a10.545 10.545 0 0 0-.106 1.292c-.006.183-.01.42-.01.53L2 16.923c0 .11.003.347.01.53a10.565 10.565 0 0 0 .103 1.282a4.313 4.313 0 0 0 .363 1.09A3.854 3.854 0 0 0 4.17 21.52a4.305 4.305 0 0 0 1.083.362a10.52 10.52 0 0 0 1.292.105c.183.007.42.01.53.01l9.848.002c.11 0 .347-.003.53-.01a10.578 10.578 0 0 0 1.282-.103a4.316 4.316 0 0 0 1.09-.363a3.854 3.854 0 0 0 1.696-1.694a4.301 4.301 0 0 0 .362-1.083a10.533 10.533 0 0 0 .106-1.292c.006-.183.01-.42.01-.53L22 7.077c0-.11-.003-.347-.01-.53m-9.773 12.41h-.003a7.126 7.126 0 0 1-3.407-.868l-3.78.991l1.012-3.693a7.13 7.13 0 1 1 6.178 3.57" />
-                            <path fill="#059669"
-                                d="M12.22 5.901a5.927 5.927 0 0 0-5.023 9.076l.141.224l-.599 2.186l2.243-.588l.216.128a5.918 5.918 0 0 0 3.016.826h.003A5.926 5.926 0 0 0 12.219 5.9Zm3.484 8.47a1.834 1.834 0 0 1-1.202.847a2.443 2.443 0 0 1-1.122-.07a10.276 10.276 0 0 1-1.015-.376a7.94 7.94 0 0 1-3.043-2.689a3.463 3.463 0 0 1-.728-1.842a1.997 1.997 0 0 1 .624-1.485a.655.655 0 0 1 .475-.223c.118 0 .237 0 .341.006c.11.005.256-.042.4.306c.15.356.506 1.233.55 1.322a.328.328 0 0 1 .015.312a1.216 1.216 0 0 1-.178.297c-.09.104-.187.232-.267.312c-.09.089-.182.185-.079.363a5.366 5.366 0 0 0 .991 1.234a4.863 4.863 0 0 0 1.433.884c.178.09.282.074.386-.045s.445-.52.564-.698s.237-.148.4-.089s1.04.49 1.218.58s.297.133.341.207a1.488 1.488 0 0 1-.104.847" />
-                        </svg>
-                        Whatsapp
+                <a href="menu.html" class="bouncing-element mt-3" target="_blank">
+                    <button
+                        class="flex items-center font-medium text-gray-900 rounded-xl bg-white px-3 py-1 justify-center font-bebas text-2xl lg:px-4 lg:py-2 lg:text-3xl tracking-wide">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 20 20">
+                            <path fill="#131313" d="M4.505 2h-.013a.5.5 0 0 0-.176.036a.5.5 0 0 0-.31.388C3.99 2.518 3.5 5.595 3.5 7c0 .95.442 1.797 1.13 2.345c.25.201.37.419.37.601v.5q0 .027-.003.054c-.027.26-.151 1.429-.268 2.631C4.614 14.316 4.5 15.581 4.5 16a2 2 0 1 0 4 0c0-.42-.114-1.684-.229-2.869a302 302 0 0 0-.268-2.63L8 10.446v-.5c0-.183.12-.4.37-.601A3 3 0 0 0 9.5 7c0-1.408-.493-4.499-.506-4.577a.5.5 0 0 0-.355-.403A.5.5 0 0 0 8.51 2h-.02h.001a.505.505 0 0 0-.501.505v4a.495.495 0 0 1-.99.021V2.5a.5.5 0 0 0-1 0v4l.001.032a.495.495 0 0 1-.99-.027V2.506A.506.506 0 0 0 4.506 2M11 6.5A4.5 4.5 0 0 1 15.5 2a.5.5 0 0 1 .5.5v6.978l.02.224a626 626 0 0 1 .228 2.696c.124 1.507.252 3.161.252 3.602a2 2 0 1 1-4 0c0-.44.128-2.095.252-3.602c.062-.761.125-1.497.172-2.042l.03-.356H12.5A1.5 1.5 0 0 1 11 8.5zM8.495 2h-.004z"/>
+                        </svg> 
+                         NUESTRA CARTA
                     </button>
                 </a>
             </article>
         </section>
 
-        <section id="menu-bar" class="text-white mt-32">
-            <article class="mx-auto max-w-1250px">
-
-                <div class="flex flex-col items-center">
-                    <h2 class="flex items-center">
-                        <span class="text-4xl font-semibold first-letter:text-emerald-400 lg:text-5xl">Menú </span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 20 20">
-                            <path fill="#059669"
-                                d="M4.505 2h-.013a.5.5 0 0 0-.176.036a.5.5 0 0 0-.31.388C3.99 2.518 3.5 5.595 3.5 7c0 .95.442 1.797 1.13 2.345c.25.201.37.419.37.601v.5q0 .027-.003.054c-.027.26-.151 1.429-.268 2.631C4.614 14.316 4.5 15.581 4.5 16a2 2 0 1 0 4 0c0-.42-.114-1.684-.229-2.869a302 302 0 0 0-.268-2.63L8 10.446v-.5c0-.183.12-.4.37-.601A3 3 0 0 0 9.5 7c0-1.408-.493-4.499-.506-4.577a.5.5 0 0 0-.355-.403A.5.5 0 0 0 8.51 2h-.02h.001a.505.505 0 0 0-.501.505v4a.495.495 0 0 1-.99.021V2.5a.5.5 0 0 0-1 0v4l.001.032a.495.495 0 0 1-.99-.027V2.506A.506.506 0 0 0 4.506 2M11 6.5A4.5 4.5 0 0 1 15.5 2a.5.5 0 0 1 .5.5v6.978l.02.224a626 626 0 0 1 .228 2.696c.124 1.507.252 3.161.252 3.602a2 2 0 1 1-4 0c0-.44.128-2.095.252-3.602c.062-.761.125-1.497.172-2.042l.03-.356H12.5A1.5 1.5 0 0 1 11 8.5zM8.495 2h-.004z" />
-                        </svg>
-                    </h2>
-                    <p class="text-xl font-light text-center lg:text-2xl">Elige y disfruta nuestra gran variedad</p>
-
-                    <div class="grid mt-4 grid-cols-2 440px:grid-cols-4 gap-3 lg:mt-5">
-                        <button class="btm btn burgers border-2 active1 text-lg w-24 lg:text-xl lg:w-28"
-                            data-target="menuBu">Burgers</button>
-                        <button class="btm btn pizzas border-2 text-lg w-24 lg:text-xl lg:w-28"
-                            data-target="menuPi">Pizzas</button>
-                        <button class="btm btn papas border-2 text-lg w-24 lg:text-xl lg:w-28"
-                            data-target="menuPa">Papas</button>
-                        <button class="btm btn cervezas border-2 text-lg w-24 lg:text-xl lg:w-28"
-                            data-target="menuBi">Cervezas</button>
-                    </div>
-                </div>
-
-                <!-- MENU HAMBURGUESA -->
-                <div id="menuBu"
-                    class="menu grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-4 lg:mt-5">
-
-                    <div class="flex flex-col items-center justify-center m-4">
-                        <img src="./assets/crispy.webp" alt="pizza" class="rounded-full" width="200">
-                        <div class="mt-5">
-                            <h3 class="first-letter:text-orange-400">
-                                <span class="text-2xl font-bold">Crispy </span>
-                                <button
-                                    class="border-2 px-3 py-1 border-emerald-300 text-emerald-300 cursor-default">$7500</button>
-                            </h3>
-                            <p class="font-light mb-2 max-w-64">Blend 150gr, cebolla crispy, huevo frito, morrones,
-                                panceta, queso dambo, barbacoa</p>
-                        </div>
-                    </div>
-
-                    <!-- SEPARADOR -->
-                    <article class="flex sm:hidden justify-center mx-auto gap-2 my-2" style="width: 40%;">
-                        <div class="lineas linea-1 bg-emerald-300" style="width: 5%; height: 3px; "></div>
-                        <div class="lineas linea-2 bg-white" style="width: 4%; height: 3px; "></div>
-                        <div class="lineas linea-3 bg-emerald-300" style="width: 10%; height: 3px; "></div>
-                    </article>
-
-                    <div class="flex flex-col items-center justify-center m-4">
-                        <img src="./assets/simplecheddar.webp" alt="pizza" class="rounded-full" width="200">
-                        <div class="mt-4">
-                            <h3 class="first-letter:text-yellow-400">
-                                <span class="text-2xl font-bold">Simple Cheddar </span>
-                                <button
-                                    class="border-2 px-3 py-1 border-emerald-300 text-emerald-300 cursor-default">$6500</button>
-                            </h3>
-                            <p class="font-light mb-2 max-w-64">Blend 150gr, queso cheddar, panceta, cebolla
-                                caramelizada,
-                                barbacoa</p>
-                        </div>
-                    </div>
-
-                    <!-- SEPARADOR -->
-                    <article class="flex sm:hidden justify-center mx-auto gap-2 my-2" style="width: 40%;">
-                        <div class="lineas linea-1 bg-emerald-300" style="width: 5%; height: 3px; "></div>
-                        <div class="lineas linea-2 bg-white" style="width: 4%; height: 3px; "></div>
-                        <div class="lineas linea-3 bg-emerald-300" style="width: 10%; height: 3px; "></div>
-                    </article>
-
-                    <div class="flex flex-col items-center justify-center  m-4">
-                        <img src="./assets/bombacheddar.webp" alt="pizza" class="rounded-full" width="200">
-                        <div class="mt-4">
-                            <h3 class="first-letter:text-yellow-400">
-                                <span class="text-2xl font-bold">Bomba Cheddar </span>
-                                <button
-                                    class="border-2 px-3 py-1 border-emerald-300 text-emerald-300 cursor-default">$7800</button>
-                            </h3>
-                            <p class="font-light mb-2 max-w-64">Doble blend 150gr, queso cheddar, panceta, cebolla
-                                caramelizada,
-                                barbacoa, papas cheddar</p>
-                        </div>
-                    </div>
-
-                    <!-- SEPARADOR -->
-                    <article class="flex sm:hidden justify-center mx-auto gap-2 my-2" style="width: 40%;">
-                        <div class="lineas linea-1 bg-emerald-300" style="width: 5%; height: 3px; "></div>
-                        <div class="lineas linea-2 bg-white" style="width: 4%; height: 3px; "></div>
-                        <div class="lineas linea-3 bg-emerald-300" style="width: 10%; height: 3px; "></div>
-                    </article>
-
-                    <div class="flex flex-col items-center justify-center m-4">
-                        <img src="./assets/4quesos.webp" alt="pizza" class="rounded-full" width="200">
-                        <div class="mt-5">
-                            <h3 class="first-letter:text-cyan-500">
-                                <span class="text-2xl font-bold">4 Quesos </span>
-                                <button
-                                    class="border-2 px-3 py-1 border-emerald-300 text-emerald-300 cursor-default">$8000</button>
-                            </h3>
-                            <p class="font-light mb-2 max-w-64">Doble blend 150gr, cebolla crispy, huevo frito,
-                                morrones,
-                                panceta, barbacoa</p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- MENU PIZZA -->
-                <div id="menuPi"
-                    class="menu hidden grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-4 lg:mt-5">
-                    <div class="flex flex-col items-center justify-center m-4">
-                        <img src="./assets/especial.webp" alt="pizza" class="rounded-full" width="200">
-                        <div class="mt-5">
-                            <h3 class="first-letter:text-red-400">
-                                <span class="text-2xl font-bold">Especial </span>
-                                <button
-                                    class="border-2 px-3 py-1 border-emerald-300 text-emerald-300 cursor-default">$7500</button>
-                            </h3>
-                            <p class="font-light mb-2 max-w-64">Queso muzzarella, jamón etiqueta negra, morrón</p>
-                        </div>
-                    </div>
-
-                    <!-- SEPARADOR -->
-                    <article class="flex sm:hidden justify-center mx-auto gap-2 my-2" style="width: 40%;">
-                        <div class="lineas linea-1 bg-emerald-300" style="width: 5%; height: 3px; "></div>
-                        <div class="lineas linea-2 bg-white" style="width: 4%; height: 3px; "></div>
-                        <div class="lineas linea-3 bg-emerald-300" style="width: 10%; height: 3px; "></div>
-                    </article>
-
-                    <div class="flex flex-col items-center justify-center m-4">
-                        <img src="./assets/AAASDASD.webp" alt="pizza" class="rounded-full" width="200">
-                        <div class="mt-4">
-                            <h3 class="first-letter:text-green-400">
-                                <span class="text-2xl font-bold">Caprese </span>
-                                <button
-                                    class="border-2 px-3 py-1 border-emerald-300 text-emerald-300 cursor-default">$6500</button>
-                            </h3>
-                            <p class="font-light mb-2 max-w-64">Queso muzzarella, queso colonia, albahaca, tomates
-                                cherry</p>
-                        </div>
-                    </div>
-
-                    <!-- SEPARADOR -->
-                    <article class="flex sm:hidden justify-center mx-auto gap-2 my-2" style="width: 40%;">
-                        <div class="lineas linea-1 bg-emerald-300" style="width: 5%; height: 3px; "></div>
-                        <div class="lineas linea-2 bg-white" style="width: 4%; height: 3px; "></div>
-                        <div class="lineas linea-3 bg-emerald-300" style="width: 10%; height: 3px; "></div>
-                    </article>
-
-                    <div class="flex flex-col items-center justify-center  m-4">
-                        <img src="./assets/calabresa.webp" alt="pizza" class="rounded-full" width="200">
-                        <div class="mt-4">
-                            <h3 class="first-letter:text-red-600">
-                                <span class="text-2xl font-bold">Calabresa </span>
-                                <button
-                                    class="border-2 px-3 py-1 border-emerald-300 text-emerald-300 cursor-default">$7800</button>
-                            </h3>
-                            <p class="font-light mb-2 max-w-64">Queso muzzarella, colchon de tomates, salame, ají
-                                molido.</p>
-                        </div>
-                    </div>
-
-                    <!-- SEPARADOR -->
-                    <article class="flex sm:hidden justify-center mx-auto gap-2 my-2" style="width: 40%;">
-                        <div class="lineas linea-1 bg-emerald-300" style="width: 5%; height: 3px; "></div>
-                        <div class="lineas linea-2 bg-white" style="width: 4%; height: 3px; "></div>
-                        <div class="lineas linea-3 bg-emerald-300" style="width: 10%; height: 3px; "></div>
-                    </article>
-
-                    <div class="flex flex-col items-center justify-center m-4">
-                        <img src="./assets/4quesoshamb.webp" alt="pizza" class="rounded-full" width="200">
-                        <div class="mt-5">
-                            <h3 class="first-letter:text-cyan-500">
-                                <span class="text-2xl font-bold">4 Quesos </span>
-                                <button
-                                    class="border-2 px-3 py-1 border-emerald-300 text-emerald-300 cursor-default">$8000</button>
-                            </h3>
-                            <p class="font-light mb-2 max-w-64">Queso muzzarella, roquefort, colonia, sardo y albahaca
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- MENU PAPA -->
-                <div id="menuPa"
-                    class="menu hidden grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-4 lg:mt-5">
-                    <div class="flex flex-col items-center justify-center m-4">
-                        <img src="./assets/papasverdeo.webp" alt="pizza" class="rounded-full" width="200">
-                        <div class="mt-5">
-                            <h3 class="first-letter:text-orange-400">
-                                <span class="text-2xl font-bold">Papas comunes </span>
-                                <button
-                                    class="border-2 px-3 py-1 border-emerald-300 text-emerald-300 cursor-default">$5000</button>
-                            </h3>
-                            <p class="font-light mb-2 max-w-64">Papas fritas tradicionales</p>
-                        </div>
-                    </div>
-
-                    <!-- SEPARADOR -->
-                    <article class="flex sm:hidden justify-center mx-auto gap-2 my-2" style="width: 40%;">
-                        <div class="lineas linea-1 bg-emerald-300" style="width: 5%; height: 3px; "></div>
-                        <div class="lineas linea-2 bg-white" style="width: 4%; height: 3px; "></div>
-                        <div class="lineas linea-3 bg-emerald-300" style="width: 10%; height: 3px; "></div>
-                    </article>
-
-                    <div class="flex flex-col items-center justify-center  m-4">
-                        <img src="./assets/de la casa.webp" alt="pizza" class="rounded-full" width="200">
-                        <div class="mt-4">
-                            <h3 class="first-letter:text-yellow-400">
-                                <span class="text-2xl font-bold">Papas de la casa </span>
-                                <button
-                                    class="border-2 px-3 py-1 border-emerald-300 text-emerald-300 cursor-default">$7800</button>
-                            </h3>
-                            <p class="font-light mb-2 max-w-64">Huevo frito, panceta y verdeo</p>
-                        </div>
-                    </div>
-
-                    <!-- SEPARADOR -->
-                    <article class="flex sm:hidden justify-center mx-auto gap-2 my-2" style="width: 40%;">
-                        <div class="lineas linea-1 bg-emerald-300" style="width: 5%; height: 3px; "></div>
-                        <div class="lineas linea-2 bg-white" style="width: 4%; height: 3px; "></div>
-                        <div class="lineas linea-3 bg-emerald-300" style="width: 10%; height: 3px; "></div>
-                    </article>
-
-                    <div class="flex flex-col items-center justify-center m-4">
-                        <img src="./assets/papascheddar.webp" alt="pizza" class="rounded-full" width="200">
-                        <div class="mt-5">
-                            <h3 class="first-letter:text-yellow-400">
-                                <span class="text-2xl font-bold">Papas cheddar </span>
-                                <button
-                                    class="border-2 px-3 py-1 border-emerald-300 text-emerald-300 cursor-default">$8000</button>
-                            </h3>
-                            <p class="font-light mb-2 max-w-64">Cheddar, panceta y verdeo</p>
-                        </div>
-                    </div>
-
-                    <!-- SEPARADOR -->
-                    <article class="flex sm:hidden justify-center mx-auto gap-2 my-2" style="width: 40%;">
-                        <div class="lineas linea-1 bg-emerald-300" style="width: 5%; height: 3px; "></div>
-                        <div class="lineas linea-2 bg-white" style="width: 4%; height: 3px; "></div>
-                        <div class="lineas linea-3 bg-emerald-300" style="width: 10%; height: 3px; "></div>
-                    </article>
-
-                    <div class="flex flex-col items-center justify-center m-4">
-                        <img src="./assets/papasverdeo.webp" alt="pizza" class="rounded-full" width="200">
-                        <div class="mt-4">
-                            <h3 class="first-letter:text-lime-600">
-                                <span class="text-2xl font-bold">Papas provenzal </span>
-                                <button
-                                    class="border-2 px-3 py-1 border-emerald-300 text-emerald-300 cursor-default">$6500</button>
-                            </h3>
-                            <p class="font-light mb-2 max-w-64">Provenzal casero</p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- MENU BIRRA -->
-                <div id="menuBi"
-                    class="menu hidden grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-4 lg:mt-5">
-                    <div class="flex flex-col items-center justify-center m-4">
-                        <img src="./assets/ipaargenta.webp" alt="pizza" class="rounded-full" width="200">
-                        <div class="mt-5">
-                            <h3 class="first-letter:text-cyan-400">
-                                <span class="text-2xl font-bold">Ipa Argenta </span>
-                                <button
-                                    class="border-2 px-3 py-1 border-emerald-300 text-emerald-300 cursor-default">$3000</button>
-                            </h3>
-                            <p class="font-light mb-2 max-w-64">IBU: 201Kg, Alcohol: 20%</p>
-                        </div>
-                    </div>
-
-                    <!-- SEPARADOR -->
-                    <article class="flex sm:hidden justify-center mx-auto gap-2 my-2" style="width: 40%;">
-                        <div class="lineas linea-1 bg-emerald-300" style="width: 5%; height: 3px; "></div>
-                        <div class="lineas linea-2 bg-white" style="width: 4%; height: 3px; "></div>
-                        <div class="lineas linea-3 bg-emerald-300" style="width: 10%; height: 3px; "></div>
-                    </article>
-
-                    <div class="flex flex-col items-center justify-center m-4">
-                        <img src="./assets/honey.webp" alt="pizza" class="rounded-full" width="200">
-                        <div class="mt-5">
-                            <h3 class="first-letter:text-orange-400">
-                                <span class="text-2xl font-bold">Honey </span>
-                                <button
-                                    class="border-2 px-3 py-1 border-emerald-300 text-emerald-300 cursor-default">$3200</button>
-                            </h3>
-                            <p class="font-light mb-2 max-w-64">IBU: 21Kg, Alcohol: 15%</p>
-                        </div>
-                    </div>
-
-                    <!-- SEPARADOR -->
-                    <article class="flex sm:hidden justify-center mx-auto gap-2 my-2" style="width: 40%;">
-                        <div class="lineas linea-1 bg-emerald-300" style="width: 5%; height: 3px; "></div>
-                        <div class="lineas linea-2 bg-white" style="width: 4%; height: 3px; "></div>
-                        <div class="lineas linea-3 bg-emerald-300" style="width: 10%; height: 3px; "></div>
-                    </article>
-                    <div class="flex flex-col items-center justify-center m-4">
-                        <img src="./assets/ipaargenta.webp" alt="pizza" class="rounded-full" width="200">
-                        <div class="mt-5">
-                            <h3 class="first-letter:text-orange-900">
-                                <span class="text-2xl font-bold">Stout</span>
-                                <button
-                                    class="border-2 px-3 py-1 border-emerald-300 text-emerald-300 cursor-default">$3300</button>
-                            </h3>
-                            <p class="font-light mb-2 max-w-64">IBU: 51Kg, Alcohol: 21%</p>
-                        </div>
-                    </div>
-
-                    <!-- SEPARADOR -->
-                    <article class="flex sm:hidden justify-center mx-auto gap-2 my-2" style="width: 40%;">
-                        <div class="lineas linea-1 bg-emerald-300" style="width: 5%; height: 3px; "></div>
-                        <div class="lineas linea-2 bg-white" style="width: 4%; height: 3px; "></div>
-                        <div class="lineas linea-3 bg-emerald-300" style="width: 10%; height: 3px; "></div>
-                    </article>
-
-                    <div class="flex flex-col items-center justify-center m-4">
-                        <img src="./assets/honey.webp" alt="pizza" class="rounded-full" width="200">
-                        <div class="mt-5">
-                            <h3 class="first-letter:text-amber-300">
-                                <span class="text-2xl font-bold">Cream </span>
-                                <button
-                                    class="border-2 px-3 py-1 border-emerald-300 text-emerald-300 cursor-default">$2900</button>
-                            </h3>
-                            <p class="font-light mb-2 max-w-64">IBU: 11Kg, Alcohol: 10%</p>
-                        </div>
-                    </div>
-
-                </div>
-
-            </article>
-        </section>
-
-        <section id="encuesta" class="text-white mb-32 lg:mt-32 lg:mb-44 bg-no-repeat bg-cover bg-center">
-
-            <!-- MOBILE -->
-            <article
-                class="mx-auto px-2 flex flex-col max-w-500px md:max-w-full md:flex-row md:justify-center md:items-center lg:hidden">
-
-                <div class="flex justify-center md:mr-4 mt-4">
-                    <figure>
-                        <img src="./assets/gente2.webp" alt="" width="360" height="350">
-                    </figure>
-                </div>
-
-                <div class="my-4 flex flex-col items-start">
-                    <h2 class="text-left font-bold text-3xl">¡Te <span class="text-emerald-400">necesitamos</span>!</h2>
-
-                    <article class="flex justify-center gap-2 my-2 w-1/2">
-                        <div class="lineas linea-1 bg-emerald-300" style="width: 5%; height: 3px; "></div>
-                        <div class="lineas linea-2 bg-white" style="width: 4%; height: 3px; "></div>
-                        <div class="lineas linea-3 bg-emerald-300" style="width: 10%; height: 3px; "></div>
-                    </article>
-
-                    <p class="mb-4 md:max-w-500px">
-                        Precisamos <span class="font-bold">ayuda de nuestros clientes</span> para que respondan una
-                        <span class="font-bold">encuesta breve</span>, y asi poder <span class="font-bold">mejorar la
-                            atención al cliente</span>. De esta manera, podrán disfrutar de <span class="font-bold">una
-                            mejor estadía en nuestro local</span>. Evaluremos las distintas opiniones de ustedes y
-                        buscaremos <span class="font-bold">soluciones a dichas inquietudes</span>.
-                    </p>
-
-                    <a href="encuesta.html" class="flex justify-center mx-auto md:mx-0">
-                        <button class="btnreserva font-bold text-xl h-auto px-6 py-3 rounded-md">
-                            APLICÁ YA!
-                        </button>
-                    </a>
-                </div>
-
-            </article>
-
-            <!-- DESKTOP -->
-            <article class="mx-auto max-w-1250px px-4 hidden lg:flex justify-between items-center w-full">
-
-                <div class="mb-0 lg:mb-20">
-                    <figure class="">
-                        <img src="./assets/gente1.webp" alt="personas" class="azul">
-                    </figure>
-
-                    <figure class="">
-                        <img src="./assets/gente2.webp" alt="personas" class="rojop">
-                    </figure>
-                </div>
-
-                <div class="my-4 flex flex-col items-start lg:my-28">
-
-                    <h2 class="text-left font-bold text-3xl lg:text-4xl">¡Te <span
-                            class="text-emerald-400">necesitamos</span>!</h2>
-
-                    <article class="flex justify-center gap-2 my-2 w-1/2">
-                        <div class="lineas linea-1 bg-emerald-300" style="width: 5%; height: 3px; "></div>
-                        <div class="lineas linea-2 bg-white" style="width: 4%; height: 3px; "></div>
-                        <div class="lineas linea-3 bg-emerald-300" style="width: 10%; height: 3px; "></div>
-                    </article>
-
-                    <p class="text-base sm:text-lg mb-4 md:max-w-500px lg:text-lg lg:max-w-lg xl:max-w-xl">
-                        Precisamos <span class="font-bold">ayuda de nuestros clientes</span> para que respondan una
-                        <span class="font-bold">encuesta breve</span>, y asi poder <span class="font-bold">mejorar la
-                            atención al cliente</span>. De esta manera, podrán disfrutar de <span class="font-bold">una
-                            mejor estadía en nuestro local</span>. Evaluremos las distintas opiniones de ustedes y
-                        buscaremos <span class="font-bold">soluciones a dichas inquietudes</span>.
-                    </p>
-
-                    <a href="encuesta.html" class="flex justify-center">
-                        <button class="btnreserva font-bold text-xl h-auto px-6 py-3 rounded-md">
-                            APLICÁ YA!
-                        </button>
-                    </a>
-                </div>
-
-            </article>
-
-        </section>
-
-        <section id="contacto" class="w-full contacto text-white mb-36 overflow-hidden ">
+        <section id="informacion" class="w-full contacto text-white my-[80px] sm:my-[110px] overflow-hidden ">
             <article class="mx-auto max-w-1250px flex flex-col items-center px-3 lg:flex-row lg:justify-between">
 
-                <article>
-                    <h2 class="text-xl font-bold text-center 500px:text-start sm:text-2xl md:text-3xl">INFORMACIÓN</h2>
-                    <article class="hidden sm:flex justify-start gap-2 mt-3 w-1/2 ">
+                <div>
+                    <h2 class="mr-2 text-3xl lg:text-4xl flex">
+                        <span class="mr-2">Toda nuestra <span class="text-emerald-400">info</span> </span>
+                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 2048 2048"><path fill="#059669" d="M1792 384h128v1280h-256v384l-384-384H768l128-128h437l203 203v-203h256zM768 1408l-384 384v-384H0V0h1664v1408zm-640-128h384v203l203-203h821V128H128zm640-128v-128h128v128zm64-768q-27 0-50 10t-40 27t-28 41t-10 50H576q0-53 20-99t55-82t81-55t100-20q53 0 99 20t82 55t55 81t20 100q0 46-14 81t-37 65t-52 57t-59 58q-20 20-25 42t-6 47v16q0 8 1 18H768v-48q0-46 14-81t35-63t47-50t46-45t36-45t14-52q0-27-10-50t-27-40t-41-28t-50-10"/></svg>
+                    </h2>
+
+                    <div class="flex justify-center gap-2 mt-2 pr-4" style="width: 40%;">
                         <div class="lineas linea-1 bg-emerald-300" style="width: 5%; height: 3px; "></div>
                         <div class="lineas linea-2 bg-white" style="width: 4%; height: 3px; "></div>
                         <div class="lineas linea-3 bg-emerald-300" style="width: 10%; height: 3px; "></div>
-                    </article>
+                    </div>
+
                     <div class="grid grid-cols-1 my-5 500px:grid-cols-2 500px:justify-between">
                         <div class="flex flex-col mb-3 max-w-64 500px:mr-3 ">
                             <h3 class="flex items-center my-4">
@@ -692,7 +296,7 @@
                             </div>
                         </div>
                     </div>
-                </article>
+                </div>
 
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3365.643830700723!2d-58.257589524004885!3d-32.48221704858369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95afdb4d45b4859f%3A0xa57444c224b181f2!2sCervecer%C3%ADa%20Klug%20Gebr%C3%A4u!5e0!3m2!1ses!2sar!4v1719451562042!5m2!1ses!2sar"
@@ -702,42 +306,76 @@
 
             </article>
         </section>
-    </main>
 
-    <footer id="footer" class="text-white bg-black3 p-8 flex">
-        <article class="grid grid-cols-1 justify-between mx-auto max-w-1250px 500px:grid-cols-2 970px:grid-cols-4">
-            <div class="500px:mb-3 970px:mb-0">
-                <h3 class="text-lg font-bold">Acceso rápido</h3>
-                <ul>
-                    <li><a href="#">&bullet; Inicio</a></li>
-                    <li><a href="#">&bullet; Sobre nosotros</a></li>
-                    <li><a href="#">&bullet; Menú</a></li>
-                    <li><a href="#">&bullet; Encuesta</a></li>
-                </ul>
-            </div>
-
-            <div class="my-3 500px:my-0 500px:mb-3 970px:mb-0">
-                <h3 class="text-lg font-bold">Contactanos</h3>
-                <p>kluggebrau@gmail.com</p>
-                <p>+54 3442 43-1242</p>
-            </div>
-
-            <div class="mb-3 500px:mb-0">
-                <h3 class="text-lg font-bold">Seguinos</h3>
-                <div class="flex">
-                    <a href="https://www.instagram.com/kluggebrau/" target="_blank" class="mr-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
-                            <path fill="#059669"
-                                d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3" />
-                        </svg>
+        <section class="flex items-center justify-center w-full z-10 mb-[80px] sm:mb-[110px]" id="galeria">
+            <article class="px-4 xl:px-0 mx-auto max-w-1250px z-10">
+                <div
+                    class="grid-gallery grid grid-cols-1 grid-rows-1 sm:grid-cols-2 md:grid-rows-2 lg:grid-cols-3 gap-4 z-10">
+                    <a class="grid-gallery__item z-10">
+                        <img class="grid-gallery__image rounded-lg w-96 h-56 object-cover z-10" src="assets/foto1.webp"
+                            alt="fotos de la casa">
                     </a>
-                    <a href="https://www.facebook.com/kluggebrau/" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
-                            <path fill="#059669"
-                                d="M20.9 2H3.1A1.1 1.1 0 0 0 2 3.1v17.8A1.1 1.1 0 0 0 3.1 22h9.58v-7.75h-2.6v-3h2.6V9a3.64 3.64 0 0 1 3.88-4a20.26 20.26 0 0 1 2.33.12v2.7H17.3c-1.26 0-1.5.6-1.5 1.47v1.93h3l-.39 3H15.8V22h5.1a1.1 1.1 0 0 0 1.1-1.1V3.1A1.1 1.1 0 0 0 20.9 2" />
-                        </svg>
+                    <a class="grid-gallery__item z-10 hidden sm:block">
+                        <img class="grid-gallery__image rounded-lg w-96 h-56 object-cover z-10" src="assets/foto2.webp"
+                            alt="fotos de la casa">
+                    </a>
+                    <a class="grid-gallery__item z-10">
+                        <img class="grid-gallery__image rounded-lg w-96 h-56 object-cover z-10" src="assets/foto3.webp"
+                            alt="fotos de la casa">
+                    </a>
+                    <a class="grid-gallery__item z-10 hidden sm:block">
+                        <img class="grid-gallery__image rounded-lg w-96 h-56 object-cover z-10" src="assets/foto4.webp"
+                            alt="fotos de la casa">
+                    </a>
+                    <a class="grid-gallery__item z-10 hidden sm:block">
+                        <img class="grid-gallery__image rounded-lg w-96 h-56 object-cover z-10" src="assets/foto5.webp"
+                            alt="fotos de la casa">
+                    </a>
+                    <a class="grid-gallery__item z-10">
+                        <img class="grid-gallery__image rounded-lg w-96 h-56 object-cover z-10" src="assets/foto6.jpg"
+                            alt="fotos de la casa">
                     </a>
                 </div>
+
+                <div id="overlay" class="overlay z-10">
+                    <span class="close z-10">&times;</span>
+                    <img class="overlay__image z-10" id="overlayImage" src="" alt="Imagen Agrandada">
+                </div>
+
+            </article>
+        </section>
+    </main>
+
+    <footer id="footer" class="text-white bg-[#101010] p-8 flex">
+        <article class="flex flex-col items-center justify-between mx-auto max-w-1250px sm:flex-row w-full">
+            <div class="500px:mb-3 970px:mb-0">
+                <div class="">
+                    <p class="text-center">
+                        Página web desarrollada por <br>
+                        <a href="https://instagram.com/faustidev" class="underline font-bold flex justify-center items-center" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#ffffff" d="M10.76 8.69a.76.76 0 0 0-.76.76V20.9c0 .42.34.76.76.76c.19 0 .35-.06.48-.16l1.91-1.55l1.66 3.62c.13.27.4.43.69.43c.11 0 .22 0 .33-.08l2.76-1.28c.38-.18.56-.64.36-1.01L17.28 18l2.41-.45a.9.9 0 0 0 .43-.26c.27-.32.23-.79-.12-1.08l-8.74-7.35l-.01.01a.76.76 0 0 0-.49-.18M15 10V8h5v2zm-1.17-5.24l2.83-2.83l1.41 1.41l-2.83 2.83zM10 0h2v5h-2zM3.93 14.66l2.83-2.83l1.41 1.41l-2.83 2.83zm0-11.32l1.41-1.41l2.83 2.83l-1.41 1.41zM7 10H2V8h5z"/></svg>
+                            @Faustino Klug 
+                        </a>
+                    </p>                
+                </div>
+            </div>
+
+            <div class="my-3 500px:my-0 500px:mb-3 970px:mb-0 bouncing-element">
+                <a href="https://wa.me/message/7YNTWW6SB2L4A1" class="" target="_blank">
+                    <button
+                        class="flex items-center font-medium text-gray-900 rounded-xl bg-white px-3 py-1 justify-center font-bebas text-2xl lg:px-4 lg:py-2 lg:text-3xl tracking-wide">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="40" viewBox="-2 -2 24 24"
+                            class="mr-2">
+                            <g fill="#059669">
+                                <path
+                                    d="M9.516.012C4.206.262.017 4.652.033 9.929a9.798 9.798 0 0 0 1.085 4.465L.06 19.495a.387.387 0 0 0 .47.453l5.034-1.184a9.981 9.981 0 0 0 4.284 1.032c5.427.083 9.951-4.195 10.12-9.58C20.15 4.441 15.351-.265 9.516.011zm6.007 15.367a7.784 7.784 0 0 1-5.52 2.27a7.77 7.77 0 0 1-3.474-.808l-.701-.347l-3.087.726l.65-3.131l-.346-.672A7.62 7.62 0 0 1 2.197 9.9c0-2.07.812-4.017 2.286-5.48a7.85 7.85 0 0 1 5.52-2.271c2.086 0 4.046.806 5.52 2.27a7.672 7.672 0 0 1 2.287 5.48c0 2.052-.825 4.03-2.287 5.481z" />
+                                <path
+                                    d="m14.842 12.045l-1.931-.55a.723.723 0 0 0-.713.186l-.472.478a.707.707 0 0 1-.765.16c-.913-.367-2.835-2.063-3.326-2.912a.694.694 0 0 1 .056-.774l.412-.53a.71.71 0 0 0 .089-.726L7.38 5.553a.723.723 0 0 0-1.125-.256c-.539.453-1.179 1.14-1.256 1.903c-.137 1.343.443 3.036 2.637 5.07c2.535 2.349 4.566 2.66 5.887 2.341c.75-.18 1.35-.903 1.727-1.494a.713.713 0 0 0-.408-1.072" />
+                            </g>
+                        </svg>
+                        HACÉ TU PEDIDO
+                    </button>
+                </a>
             </div>
 
             <div class="flex items-center ml-2">

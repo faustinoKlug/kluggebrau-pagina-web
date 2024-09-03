@@ -7,6 +7,7 @@ module.exports = {
     Quicksand: "Quicksand",
     Shadows: "Shadows Into Light",
     Caveat: "Merienda",
+    bebas: "Bebas Neue",
    },
    maxWidth: {
     "1250px": "1250px",

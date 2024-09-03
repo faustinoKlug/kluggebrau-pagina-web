@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es" class="overflow-x-hidden scroll-smooth">
+<head>
+    <title>Klug Gebrau - Restobar de Cerveza Artesanal</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4b083bbe31.js" crossorigin="anonymous"></script>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./hamburgers.css">
+    <link rel="icon" href="./assets/logo.webp">
+</head>
+<body class="bg-[#131313]">
+    <div class="bg-cover bg-no-repeat bg-center hero-image3 text-white flex flex-col items-center pt-20 relative h-[52dvh]">
+
+        <header class="mx-auto w-full flex items-center flex-col bg-header fixed top-0">
+
+            <!-- DESKTOP -->
+            <div class="hidden py-2 justify-between 815px:flex max-w-1250px mx-auto w-full">
+
+                <!-- LOGO -->
+                <div class="flex items-center ml-2">
+                    <img src="assets/logo.webp" alt="logo kluggebrau" width="78" height="78">
+                    <p class="ml-2 font-Shadows logo font-medium">
+                        <span
+                            class="text-3xl mx- font-semibold bg-gradient-to-r from-green-600 via-green-400 to-emerald-600 inline-block text-transparent bg-clip-text">Klug
+                            Gebrau</span><br>Cerveza Artesanal
+                    </p>
+                </div>
+
+                <!-- MENU DE NAVEGACION -->
+                <nav class="flex items-center mr-2">
+                    <ul class="flex">
+                        <li class="hovAnim text-lg"><a href="index.html#inicio">Inicio</a></li>
+                        <li class="hovAnim mx-10 text-lg"><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+                        <li class="hovAnim text-lg"><a href="menu.html">Menú</a></li>
+                        <li class="hovAnim ml-10 text-lg mr-2"><a href="index.html#informacion">Información</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+            <!-- MOBILE -->
+            <div class="flex py-2 justify-between 815px:hidden max-w-1250px w-full">
+
+                <!-- LOGO -->
+                <div class="flex items-center ml-2">
+                    <img src="assets/logo.webp" alt="logo" width="78" height="78" class="hidden 230px:inline">
+                    <p class="ml-2 font-Shadows text-xl 360px:logo font-medium">
+                        <span
+                            class="logo 360px:text-3xl font-bold bg-gradient-to-r from-green-600 via-green-400 to-emerald-600 inline-block text-transparent bg-clip-text">Klug
+                            Gebrau</span><br>Cerveza Artesanal
+                    </p>
+                </div>
+
+                <!-- BOTON HAMB -->
+                <div class="flex items-center">
+                    <button class="hamburger hamburger--squeeze" type="button" id="boton">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- MENU DE NAVEGACION MOBILE-->
+            <nav class="mb-4 mt-3 hidden 815px:hidden w-full h-dvh" id="menu">
+                <ul>
+                    <li class="text-xl w-99p nav-mobile p-2 mx-2"><a href="index.html#inicio" id="li-mob">Inicio</a></li>
+                    <li class="my-2 text-xl w-99p nav-mobile2 p-2 mx-2"><a href="sobre-nosotros.html" id="li-mob">Sobre nosotros</a></li>
+                    <li class="text-xl w-99p nav-mobile2 p-2 mx-2"><a href="menu.html" id="li-mob">Menú</a></li>
+                    <li class="text-xl w-99p nav-mobile2 p-2 mx-2"><a href="index.html#informacion" id="li-mob">Información</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <section class="max-w-1250px flex items-center justify-center hero-text w-full">
+            <article class="flex items-center flex-col px-4 xl:px-0">
+
+                <h1 class="text-[40px] leading-[40px] text-center font-bold sm:text-5xl mb-2 lg:text-6xl">Sobre <span class="text-emerald-400 ">nosotros</span></h1>
+                <p class="text-xl text-center sm:text-2xl">Toda nuestra historia y logros</p>
+            </article>
+        </section>
+
+    </div>
+
+    <main class="w-full h-full">
+        <section class="w-full h-full text-white flex items-center my-32">
+            <article class="mx-auto max-w-[1300px] w-full h-full px-2 md:px-6 flex flex-col items-center">
+                <div class="flex flex-col items-center md:flex-row md:justify-between md:items-center w-full">
+                    <div class="">
+                        <h2 class="flex items-center text-2xl sm:text-4xl lg:text-5-xl">
+                            Nuestra <span class="ml-2 text-emerald-400">historia</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 512 512" class="ml-2">
+                                <path fill="#059669" d="M336 256c-20.56 0-40.44-9.18-56-25.84c-15.13-16.25-24.37-37.92-26-61c-1.74-24.62 5.77-47.26 21.14-63.76S312 80 336 80c23.83 0 45.38 9.06 60.7 25.52c15.47 16.62 23 39.22 21.26 63.63c-1.67 23.11-10.9 44.77-26 61C376.44 246.82 356.57 256 336 256m131.83 176H204.18a27.71 27.71 0 0 1-22-10.67a30.22 30.22 0 0 1-5.26-25.79c8.42-33.81 29.28-61.85 60.32-81.08C264.79 297.4 299.86 288 336 288c36.85 0 71 9 98.71 26.05c31.11 19.13 52 47.33 60.38 81.55a30.27 30.27 0 0 1-5.32 25.78A27.68 27.68 0 0 1 467.83 432M147 260c-35.19 0-66.13-32.72-69-72.93c-1.42-20.6 5-39.65 18-53.62c12.86-13.83 31-21.45 51-21.45s38 7.66 50.93 21.57c13.1 14.08 19.5 33.09 18 53.52c-2.87 40.2-33.8 72.91-68.93 72.91m65.66 31.45c-17.59-8.6-40.42-12.9-65.65-12.9c-29.46 0-58.07 7.68-80.57 21.62c-25.51 15.83-42.67 38.88-49.6 66.71a27.39 27.39 0 0 0 4.79 23.36A25.32 25.32 0 0 0 41.72 400h111a8 8 0 0 0 7.87-6.57c.11-.63.25-1.26.41-1.88c8.48-34.06 28.35-62.84 57.71-83.82a8 8 0 0 0-.63-13.39c-1.57-.92-3.37-1.89-5.42-2.89"/>
+                            </svg>
+                        </h2>
+                        <div class="flex justify-center mb-2 mt-1 gap-2 w-[150px] sm:w-[250px]">
+                            <div class="lineas linea-1 bg-emerald-300" style="width: 5%; height: 3px; "></div>
+                            <div class="lineas linea-2 bg-white" style="width: 4%; height: 3px; "></div>
+                            <div class="lineas linea-3 bg-emerald-300" style="width: 10%; height: 3px; "></div>
+                        </div>
+                        <p class="text-lg max-w-[500px]">
+                            Nuestra cervecería tiene sus <span class="font-bold">inicios</span> el <span class="font-bold"> 28 de mayo de 2011</span>, día de la final de la UCL entre Manchester United y Barcelona. En el lavadero de nuestra casa, con la simple idea de <span class="font-bold">compartir la pasión</span> por la cerveza artesanal con <span class="font-bold">amigos y familiares</span>. Aquellos primeros experimentos dieron paso a una aventura que <span class="font-bold">superó todas nuestras expectativas</span>. La demanda fue creciendo y pronto nos dimos cuenta de que teníamos algo especial entre manos. En el <span class="font-bold">año 2017</span> empezamos a <span class="font-bold">comercializar nuestra cerveza</span>, tuvo una buena aceptacion, y en el año <span class="font-bold">2020</span>, decidimos dar el salto y <span class="font-bold">abrir las puertas</span> de nuestro primer <span class="font-bold">local físico</span>, un espacio donde la <span class="font-bold">buena cerveza</span> se fusionara con la <span class="font-bold">buena comida</span>. Y en abril de 2021 obtuvimos la <span class="font-bold">habilitación del local</span>. Hoy, en 2024, Klug Gebrau es un <span class="font-bold">referente en la escena gastronómica local</span>, gracias al <span class="font-bold">compromiso</span> y la <span class="font-bold">dedicación</span> de todo nuestro <span class="font-bold">equipo</span>. Seguimos creciendo y evolucionando, siempre buscando nuevas formas de sorprender a nuestros clientes
+                        </p>
+                    </div>
+                    <div class="flex flex-col items-center gap-y-2">
+                        <p class="text-center text-lg font-semibold py-2 px-3 bg-[#191919] text-white rounded-md w-full md:text-xl md:p-3">Inicios - 2020</p>
+                        <div class="grid grid-cols-2 gap-2">
+                            <img src="assets/pic1.jpg" alt="construccion" class="w-[350px] h-[250px] object-cover">
+                            <img src="assets/pic2.jpg" alt="construccion" class="w-[350px] h-[250px] object-cover">
+                            <img src="assets/pic3.jpg" alt="construccion" class="w-[350px] h-[250px] object-cover">
+                            <img src="assets/pic4.jpg" alt="construccion" class="w-[350px] h-[250px] object-cover">
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="w-full flex flex-col items-center justify-center my-32">
+                    <!-- <p class="text-center text-lg font-semibold bg-[#191919] text-white rounded-md w-full md:text-xl p-3 mb-2">Nuestros logros</p> -->
+                    <div class="grid grid-cols-2 w-full sm:grid-cols-3 md:grid-cols-4 gap-2">
+                        <div class="flex flex-col items-center justify-center gap-y-2 w-full h-[180px] bg-estrellas p-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 36 36">
+                                <path fill="#FFAC33" d="M27.287 34.627c-.404 0-.806-.124-1.152-.371L18 28.422l-8.135 5.834a1.97 1.97 0 0 1-2.312-.008a1.97 1.97 0 0 1-.721-2.194l3.034-9.792l-8.062-5.681a1.98 1.98 0 0 1-.708-2.203a1.98 1.98 0 0 1 1.866-1.363L12.947 13l3.179-9.549a1.976 1.976 0 0 1 3.749 0L23 13l10.036.015a1.975 1.975 0 0 1 1.159 3.566l-8.062 5.681l3.034 9.792a1.97 1.97 0 0 1-.72 2.194a1.96 1.96 0 0 1-1.16.379"/>
+                            </svg>
+                            <p class="font-semibold text-2xl text-center">4,7 Estrellas</p>
+                        </div>
+                        <div class="flex flex-col items-center justify-center gap-y-2 w-full h-[180px] bg-comida p-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 512 512">
+                                <path fill="#ffffff" d="m445.588 56l-.026 384.352c6.881 11.323 14 15.677 19.97 15.648c5.924-.028 12.967-4.434 19.714-15.418L466.82 244.27l-.215-2.391l1.475-1.906c21.174-27.169 28.573-74.108 22.533-113.81c-3.02-19.852-9.342-37.82-18.195-50.522c-7.424-10.652-16.28-17.447-26.828-19.641zm-372.375.004l-.016 67.127l-12.56-.016V56.008H46.332l.002 67.11H33.756v-67.11h-14.57v103.228c-.001 11.417 6.23 17.748 16.04 21.662l4.06 1.622l-.09 4.37c-2 84.57-3.977 169.139-5.962 253.708C40.074 451.79 47.1 456.028 52.95 456s12.87-4.377 19.623-15.432q-3.474-126.821-6.941-253.644l-.12-4.4l4.073-1.606c10.324-4.106 17.039-11.074 17.039-21.676V56.004h-13.41zM256 95A161 161 0 0 0 95 256a161 161 0 0 0 161 161a161 161 0 0 0 161-161A161 161 0 0 0 256 95"/>
+                            </svg>
+                            <p class="font-semibold text-2xl text-center">+30 Platos de comida</p>
+                        </div>
+                        <div class="flex flex-col items-center justify-center gap-y-2 w-full h-[180px] bg-medalla p-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 32 32">
+                                <g fill="none"><path fill="#0074BA" d="m18.768 11.51l-5.22-8.58c-.34-.58-.95-.93-1.62-.93h-6.59c-1.45 0-2.36 1.56-1.65 2.82a16.7 16.7 0 0 0 5.43 5.78c.76.59 1.7.91 2.67.91z"/><path fill="#00A6ED" d="M26.658 2h-6.59c-.67 0-1.28.35-1.62.93l-5.22 8.58h6.99c.97 0 1.9-.32 2.67-.91c2.25-1.46 4.11-3.44 5.43-5.78c.7-1.26-.21-2.82-1.66-2.82"/><path fill="#BEBEBE" d="M15.96 30.001c5.545 0 10.04-4.607 10.04-10.29s-4.495-10.29-10.04-10.29s-10.04 4.607-10.04 10.29s4.495 10.29 10.04 10.29"/><path fill="#E6E6E6" d="M15.96 28.761c-2.36 0-4.58-.94-6.24-2.65a9.1 9.1 0 0 1-2.59-6.4c0-2.42.92-4.69 2.59-6.4a8.69 8.69 0 0 1 12.49 0c3.44 3.53 3.44 9.27 0 12.8c-1.68 1.71-3.9 2.65-6.25 2.65m-.01-16.87c-1.95 0-3.91.76-5.39 2.29a7.87 7.87 0 0 0-2.23 5.53c0 2.09.79 4.05 2.23 5.53a7.48 7.48 0 0 0 5.39 2.29c2.04 0 3.95-.81 5.39-2.29c2.97-3.05 2.97-8.01 0-11.06a7.46 7.46 0 0 0-5.39-2.29"/><path fill="#636363" d="M17.838 23.95h-3.97a1 1 0 0 1-.91-.58a1 1 0 0 1 .13-1.07l3.3-4.05c.26-.32.14-.66.1-.76a.64.64 0 0 0-.58-.4h-.05c-.32 0-.61.15-.8.41c-.32.45-.95.56-1.41.24a1.01 1.01 0 0 1-.24-1.41c.56-.79 1.47-1.26 2.44-1.26h.13c1.02.05 1.91.66 2.33 1.59c.43.96.29 2.05-.37 2.86l-1.95 2.4h1.84c.56 0 1.01.45 1.01 1.01s-.44 1.02-1 1.02"/></g>
+                            </svg>
+                            <p class="font-semibold text-2xl text-center">Medalla de plata Neipa</p>
+                        </div>
+                        <div class="flex flex-col items-center justify-center gap-y-2 w-full h-[180px] bg-exp sm:col-span-3 md:col-span-1 p-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24">
+                                <path fill="none" stroke="#059669" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21.897 6.63c.32.898-.13 1.513-.998 2.118c-.702.488-1.595 1.017-2.542 1.922c-.928.887-1.834 1.955-2.639 3.006a39 39 0 0 0-2.71 3.99a1.65 1.65 0 0 1-1.446.834a1.66 1.66 0 0 1-1.426-.873c-.748-1.363-1.326-1.901-1.592-2.094c-.737-.537-1.544-.63-1.544-1.8C7 12.776 7.746 12 8.667 12c.658.027 1.262.309 1.789.693c.342.249.705.578 1.082 1.012c.442-.654.975-1.408 1.573-2.189c.868-1.133 1.892-2.35 2.99-3.399c1.08-1.032 2.33-1.998 3.653-2.508c.863-.333 1.822.124 2.143 1.022M4.44 12.076a2.7 2.7 0 0 0-.6-.125l-.141-.006c-.938 0-1.699.783-1.699 1.748c0 .874.623 1.598 1.437 1.728q.042.02.137.087c.27.195.86.737 1.623 2.111c.298.538.851.873 1.453.88a1.67 1.67 0 0 0 1.112-.407M15 5.5c-1.35.515-2.622 1.489-3.723 2.53c-.384.363-.76.746-1.123 1.139" color="#059669"/>
+                            </svg>
+                            <p class="font-semibold text-2xl text-center">+4 Años de experiencia</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row md:justify-between md:items-center w-full gap-y-4">
+                    <div class="flex flex-col items-center gap-y-2 my-3 w-full">
+                        <p class="w-full text-center text-lg font-semibold bg-[#191919] text-white rounded-md max-w-full md:text-xl p-3">Día de la habilitacion - 21 de abril de 2021</p>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
+                            <div class="">
+                                <img src="assets/habilitacion.jpg" alt="habilitacion" class="w-full h-[400px] object-cover object-center">
+                            </div>
+                            <div class="">
+                                <img src="assets/habilitacion3.jpg" alt="habilitacion" class="w-full h-[400px] object-cover object-center">
+                            </div>
+                            <div class="col-span-2 sm:col-span-1">
+                                <img src="assets/habilitacion2.jpg" alt="habilitacion" class="w-full h-[400px] object-cover object-center">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer id="footer" class="text-white bg-[#101010] p-8 flex">
+        <article class="flex flex-col items-center justify-between mx-auto max-w-1250px sm:flex-row w-full">
+            <div class="500px:mb-3 970px:mb-0">
+                <div class="">
+                    <p class="text-center">
+                        Página web desarrollada por <br>
+                        <a href="https://instagram.com/faustidev" class="underline font-bold flex justify-center items-center" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="#ffffff" d="M10.76 8.69a.76.76 0 0 0-.76.76V20.9c0 .42.34.76.76.76c.19 0 .35-.06.48-.16l1.91-1.55l1.66 3.62c.13.27.4.43.69.43c.11 0 .22 0 .33-.08l2.76-1.28c.38-.18.56-.64.36-1.01L17.28 18l2.41-.45a.9.9 0 0 0 .43-.26c.27-.32.23-.79-.12-1.08l-8.74-7.35l-.01.01a.76.76 0 0 0-.49-.18M15 10V8h5v2zm-1.17-5.24l2.83-2.83l1.41 1.41l-2.83 2.83zM10 0h2v5h-2zM3.93 14.66l2.83-2.83l1.41 1.41l-2.83 2.83zm0-11.32l1.41-1.41l2.83 2.83l-1.41 1.41zM7 10H2V8h5z"/></svg>
+                            @Faustino Klug 
+                        </a>
+                    </p>                
+                </div>
+            </div>
+
+            <div class="my-3 500px:my-0 500px:mb-3 970px:mb-0 bouncing-element">
+                <a href="https://wa.me/message/7YNTWW6SB2L4A1" class="" target="_blank">
+                    <button
+                        class="flex items-center font-medium text-gray-900 rounded-xl bg-white px-3 py-1 justify-center font-bebas text-2xl lg:px-4 lg:py-2 lg:text-3xl tracking-wide">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="40" viewBox="-2 -2 24 24"
+                            class="mr-2">
+                            <g fill="#059669">
+                                <path
+                                    d="M9.516.012C4.206.262.017 4.652.033 9.929a9.798 9.798 0 0 0 1.085 4.465L.06 19.495a.387.387 0 0 0 .47.453l5.034-1.184a9.981 9.981 0 0 0 4.284 1.032c5.427.083 9.951-4.195 10.12-9.58C20.15 4.441 15.351-.265 9.516.011zm6.007 15.367a7.784 7.784 0 0 1-5.52 2.27a7.77 7.77 0 0 1-3.474-.808l-.701-.347l-3.087.726l.65-3.131l-.346-.672A7.62 7.62 0 0 1 2.197 9.9c0-2.07.812-4.017 2.286-5.48a7.85 7.85 0 0 1 5.52-2.271c2.086 0 4.046.806 5.52 2.27a7.672 7.672 0 0 1 2.287 5.48c0 2.052-.825 4.03-2.287 5.481z" />
+                                <path
+                                    d="m14.842 12.045l-1.931-.55a.723.723 0 0 0-.713.186l-.472.478a.707.707 0 0 1-.765.16c-.913-.367-2.835-2.063-3.326-2.912a.694.694 0 0 1 .056-.774l.412-.53a.71.71 0 0 0 .089-.726L7.38 5.553a.723.723 0 0 0-1.125-.256c-.539.453-1.179 1.14-1.256 1.903c-.137 1.343.443 3.036 2.637 5.07c2.535 2.349 4.566 2.66 5.887 2.341c.75-.18 1.35-.903 1.727-1.494a.713.713 0 0 0-.408-1.072" />
+                            </g>
+                        </svg>
+                        HACÉ TU PEDIDO
+                    </button>
+                </a>
+            </div>
+
+            <div class="flex items-center ml-2">
+                <img src="assets/logo.webp" alt="logo kluggebrau" width="78" height="78">
+                <p class="ml-2 font-Shadows logo font-medium">
+                    <span
+                        class="text-3xl font-semibold bg-gradient-to-r from-green-600 via-green-400 to-emerald-600 inline-block text-transparent bg-clip-text">Klug
+                        Gebrau</span><br>Cerveza Artesanal
+                </p>
+            </div>
+        </article>
+    </footer>
+
+    <script src="index.js" type="module"></script>
+</body>
+</html>

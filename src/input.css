@@ -1,19 +1,118 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Merienda:wght@300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
+   .bg-estrellas {
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(assets/gente1.webp);
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+
+    .bg-comida {
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(assets/30platos.JPG);
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+
+    .bg-exp {
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(assets/exp.JPG);
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+
+ .bg-medalla {
+   background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url(assets/medallaipa.PNG);
+   background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+ }
+
+ #hero {
+    min-height: 50vh;
+    position: relative;
+ }
+
+ video {
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ }
+ .capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+    z-index: 60;
+ }
+ .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+ }
+ .overlay__image {
+    max-width: 90%;
+    z-index:100;
+    max-height: 90%;
+ }
+ .close {
+    position: absolute;
+    top: 100px;
+    right: 40px;
+    font-size: 60px;
+    color: white;
+    cursor: pointer;
+ }
+ .content-overlay {
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+ }
+ .content:hover .content-overlay {
+    opacity: 1;
+ }
  html {
   font-family: "Quicksand";
   scroll-behavior: smooth;
  }
- .hero-image {
+ .hero-image2 {
   background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-   url(./assets/hero3.webp);
+   url(./assets/bgmenu1.JPG);
+ }
+ .hero-image3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+  url(./assets/sobrenosotros.jpeg);
  }
  .btnreserva {
   background: #348f50;
@@ -77,12 +176,13 @@
   display: grid;
  }
  #hace-tu-pedido {
-  border-top: 12px solid #0a0a0a;
-  border-bottom: 12px solid #0a0a0a;
+  border-top: 12px solid #181515;
+  border-bottom: 12px solid #181515;
   background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-   url(./assets/hacetupedido.webp);
-  background-position: center center;
+   url(./assets/about-bg.jpg);
+  background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
  }
  .wpp {
@@ -105,12 +205,22 @@
   width: 420px;
   height: 300px;
  }
- #encuesta {
-  background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)),
-   url(./assets/encuesta3.webp);
-  border-bottom: 16px solid #0C0A0A;
-  border-top: 16px solid #0C0A0A;
-  background-repeat: no-repeat;
-  background-size: cover;
+ @keyframes calm-bounce {
+  0%,
+  100% {
+   transform: translateY(0);
+  }
+  50% {
+   transform: translateY(7px);
+  }
+ }
+ .bouncing-element {
+  position: relative;
+  animation: calm-bounce 1.2s infinite;
+  animation-timing-function: ease-in-out;
+  transition: scale .3s ease;
+ }
+ .bouncing-element:hover {
+  scale: 105%;
  }
 }
