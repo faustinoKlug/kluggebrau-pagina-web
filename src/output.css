@@ -863,6 +863,16 @@ html {
   margin-bottom: 80px;
 }
 
+.my-20{
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.my-8{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .mb-12{
   margin-bottom: 3rem;
 }
@@ -1495,6 +1505,11 @@ html {
     margin-bottom: 110px;
   }
 
+  .sm\:my-16{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
   .sm\:mb-\[110px\]{
     margin-bottom: 110px;
   }
@@ -1555,6 +1570,11 @@ html {
 @media (min-width: 768px){
   .md\:col-span-1{
     grid-column: span 1 / span 1;
+  }
+
+  .md\:my-16{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
   }
 
   .md\:mb-0{
@@ -1622,6 +1642,11 @@ html {
 }
 
 @media (min-width: 1024px){
+  .lg\:my-32{
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+  }
+
   .lg\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -1681,6 +1706,16 @@ html {
   .xl\:my-\[130px\]{
     margin-top: 130px;
     margin-bottom: 130px;
+  }
+
+  .xl\:my-32{
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+  }
+
+  .xl\:my-\[120px\]{
+    margin-top: 120px;
+    margin-bottom: 120px;
   }
 
   .xl\:mb-\[3700px\]{
