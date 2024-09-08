@@ -865,16 +865,6 @@ html {
   margin-bottom: 80px;
 }
 
-.my-0\.5{
-  margin-top: 0.125rem;
-  margin-bottom: 0.125rem;
-}
-
-.my-0{
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
 .mb-2{
   margin-bottom: 0.5rem;
 }
@@ -1013,10 +1003,6 @@ html {
 
 .h-full{
   height: 100%;
-}
-
-.max-h-\[80px\]{
-  max-height: 80px;
 }
 
 .max-h-\[104px\]{
@@ -1369,8 +1355,8 @@ html {
   line-height: 1;
 }
 
-.text-\[40px\]{
-  font-size: 40px;
+.text-\[45px\]{
+  font-size: 45px;
 }
 
 .text-lg{
@@ -1381,10 +1367,6 @@ html {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-\[45px\]{
-  font-size: 45px;
 }
 
 .font-bold{
