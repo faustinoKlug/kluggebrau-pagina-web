@@ -865,6 +865,16 @@ html {
   margin-bottom: 80px;
 }
 
+.my-0\.5{
+  margin-top: 0.125rem;
+  margin-bottom: 0.125rem;
+}
+
+.my-0{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 .mb-2{
   margin-bottom: 0.5rem;
 }
@@ -1005,6 +1015,14 @@ html {
   height: 100%;
 }
 
+.max-h-\[80px\]{
+  max-height: 80px;
+}
+
+.max-h-\[104px\]{
+  max-height: 104px;
+}
+
 .w-96{
   width: 24rem;
 }
@@ -1071,10 +1089,6 @@ html {
 
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.grid-cols-4{
-  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .grid-rows-1{
@@ -1369,12 +1383,20 @@ html {
   line-height: 1.75rem;
 }
 
+.text-\[45px\]{
+  font-size: 45px;
+}
+
 .font-bold{
   font-weight: 700;
 }
 
 .font-medium{
   font-weight: 500;
+}
+
+.font-normal{
+  font-weight: 400;
 }
 
 .font-semibold{
@@ -1460,7 +1482,7 @@ html {
   }
 }
 
-@media (min-width: 400px){
+@media (min-width: 410px){
   .\34 00px\:flex{
     display: flex;
   }
@@ -1566,12 +1588,26 @@ html {
     grid-column: span 1 / span 1;
   }
 
+  .md\:my-0{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .md\:my-12{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
   .md\:mb-0{
     margin-bottom: 0px;
   }
 
   .md\:mt-20{
     margin-top: 5rem;
+  }
+
+  .md\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:grid-cols-3{
