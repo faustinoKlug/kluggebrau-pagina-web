@@ -1,36 +1,138 @@
 const d = document;
 
-export default function menuComida(btm, btn, menu) {
- const $btns = d.querySelectorAll(btm);
- let activeButton = d.querySelector(".active1");
- $btns.forEach((button) => {
-  button.addEventListener("click", () => {
-   if (activeButton && activeButton !== button) {
-    activeButton.classList.remove("active1");
-   }
+export default function menuComida(
+  btnBurgers,
+  btnPizzas,
+  btnPapas,
+  btnPebetes,
+  btnEstilos,
+  btnPostres,
+  menuBurgers,
+  menuPizzas,
+  menuPapas,
+  menuPebetes,
+  menuEstilos,
+  menuPostres
+) {
 
-   button.classList.add("active1");
-   activeButton = button;
-  });
- });
+  const $btnBurgers = d.querySelector(btnBurgers),
+    $btnPizzas = d.querySelector(btnPizzas),
+    $btnPapas = d.querySelector(btnPapas),
+    $btnPebetes = d.querySelector(btnPebetes),
+    $btnEstilos = d.querySelector(btnEstilos),
+    $btnPostres = d.querySelector(btnPostres),
+    $menuBurgers = d.querySelector(menuBurgers),
+    $menuPizzas = d.querySelector(menuPizzas),
+    $menuPapas = d.querySelector(menuPapas),
+    $menuPebetes = d.querySelector(menuPebetes),
+    $menuEstilos = d.querySelector(menuEstilos),
+    $menuPostres = d.querySelector(menuPostres);
 
- const buttons = d.querySelectorAll(btn),
-  menus = d.querySelectorAll(menu);
+  $btnBurgers.addEventListener("click", () => {
+    if (!$menuBurgers.classList.contains("flex")) {
+      $menuPizzas.classList.remove("flex");
+      $menuPizzas.classList.add("hidden");
+      $menuPapas.classList.remove("flex");
+      $menuPapas.classList.add("hidden");
+      $menuPebetes.classList.remove("flex");
+      $menuPebetes.classList.add("hidden");
+      $menuEstilos.classList.remove("flex");
+      $menuEstilos.classList.add("hidden");
+      $menuPostres.classList.remove("flex");
+      $menuPostres.classList.add("hidden")
 
- buttons.forEach((button) => {
-  button.addEventListener("click", function () {
-   const targetMenuId = this.getAttribute("data-target");
-   const targetMenu = document.getElementById(targetMenuId);
-
-   menus.forEach((menu) => {
-    if (menu.classList.contains("grid") && menu.id !== targetMenuId) {
-     menu.classList.remove("grid");
-     menu.classList.add("hidden");
+      $menuBurgers.classList.remove("hidden");
+      $menuBurgers.classList.add("flex");
     }
-   });
-
-   targetMenu.classList.remove("hidden");
-   targetMenu.classList.add("grid");
   });
- });
+
+  $btnPizzas.addEventListener("click", () => {
+    if (!$menuPizzas.classList.contains("flex")) {
+      $menuBurgers.classList.remove("flex");
+      $menuBurgers.classList.add("hidden");
+      $menuPapas.classList.remove("flex");
+      $menuPapas.classList.add("hidden");
+      $menuPebetes.classList.remove("flex");
+      $menuPebetes.classList.add("hidden");
+      $menuEstilos.classList.remove("flex");
+      $menuEstilos.classList.add("hidden");
+      $menuPostres.classList.remove("flex");
+      $menuPostres.classList.add("hidden")
+
+      $menuPizzas.classList.remove("hidden");
+      $menuPizzas.classList.add("flex");
+    }
+  });
+
+  $btnPapas.addEventListener("click", () => {
+    if (!$menuPapas.classList.contains("flex")) {
+      $menuBurgers.classList.remove("flex");
+      $menuBurgers.classList.add("hidden");
+      $menuPizzas.classList.remove("flex");
+      $menuPizzas.classList.add("hidden");
+      $menuPebetes.classList.remove("flex");
+      $menuPebetes.classList.add("hidden");
+      $menuEstilos.classList.remove("flex");
+      $menuEstilos.classList.add("hidden");
+      $menuPostres.classList.remove("flex");
+      $menuPostres.classList.add("hidden")
+
+      $menuPapas.classList.remove("hidden");
+      $menuPapas.classList.add("flex");
+    }
+  });
+
+  $btnPebetes.addEventListener("click", () => {
+    if (!$menuPebetes.classList.contains("flex")) {
+      $menuBurgers.classList.remove("flex");
+      $menuBurgers.classList.add("hidden");
+      $menuPapas.classList.remove("flex");
+      $menuPapas.classList.add("hidden");
+      $menuPizzas.classList.remove("flex");
+      $menuPizzas.classList.add("hidden");
+      $menuEstilos.classList.remove("flex");
+      $menuEstilos.classList.add("hidden");
+      $menuPostres.classList.remove("flex");
+      $menuPostres.classList.add("hidden")
+
+      $menuPebetes.classList.remove("hidden");
+      $menuPebetes.classList.add("flex");
+    }
+  });
+
+  $btnEstilos.addEventListener("click", () => {
+    if (!$menuEstilos.classList.contains("flex")) {
+      $menuBurgers.classList.remove("flex");
+      $menuBurgers.classList.add("hidden");
+      $menuPapas.classList.remove("flex");
+      $menuPapas.classList.add("hidden");
+      $menuPizzas.classList.remove("flex");
+      $menuPizzas.classList.add("hidden");
+      $menuPebetes.classList.remove("flex");
+      $menuPebetes.classList.add("hidden");
+      $menuPostres.classList.remove("flex");
+      $menuPostres.classList.add("hidden")
+      
+      $menuEstilos.classList.remove("hidden");
+      $menuEstilos.classList.add("flex");
+    }
+  });
+
+  $btnPostres.addEventListener("click", () => {
+    if (!$menuPostres.classList.contains("flex")) {
+      $menuBurgers.classList.remove("flex");
+      $menuBurgers.classList.add("hidden");
+      $menuPapas.classList.remove("flex");
+      $menuPapas.classList.add("hidden");
+      $menuPizzas.classList.remove("flex");
+      $menuPizzas.classList.add("hidden");
+      $menuPebetes.classList.remove("flex");
+      $menuPebetes.classList.add("hidden");
+      $menuEstilos.classList.remove("flex");
+      $menuEstilos.classList.add("hidden")
+      
+      $menuPostres.classList.remove("hidden");
+      $menuPostres.classList.add("flex");
+    }
+  });
 }

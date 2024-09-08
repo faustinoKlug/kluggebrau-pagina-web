@@ -4,8 +4,8 @@ import menuHamburguesa from "./js/menu_hamburguesa.js";
 
 const d = document;
 
-d.addEventListener("DOMContentLoaded", (evenst) => {
+d.addEventListener("DOMContentLoaded", () => {
  menuHamburguesa("#boton", "#menu", "#li-mob");
- menuComida(".btm", ".btn", ".menu");
- galleryImage(".grid-gallery__image", "overlay", "overlayImage", ".close");
+ menuComida("#btn-burgers", "#btn-pizzas", "#btn-papas", "#btn-pebetes", "#btn-estilos", "#btn-postres", "#burgers", "#pizzas", "#papas", "#pebetes", "#estilos", "#postres");
+ galleryImage(".grid-gallery__image", ".overlay", ".overlayImage", ".close");
 });

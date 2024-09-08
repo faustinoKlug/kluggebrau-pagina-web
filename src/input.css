@@ -3,64 +3,62 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Merienda:wght@300..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-   .bg-estrellas {
-      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(assets/gente1.webp);
-      background-size: cover;
-      background-position: center center;
-      background-repeat: no-repeat;
-    }
-
-    .bg-comida {
-      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(assets/30platos.JPG);
-      background-size: cover;
-      background-position: center center;
-      background-repeat: no-repeat;
-    }
-
-    .bg-exp {
-      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(assets/exp.JPG);
-      background-size: cover;
-      background-position: center center;
-      background-repeat: no-repeat;
-    }
-
- .bg-medalla {
-   background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url(assets/medallaipa.PNG);
-   background-size: cover;
-   background-position: center center;
-   background-repeat: no-repeat;
- }
-
- #hero {
+  .bg-estrellas {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(assets/gente1.webp);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .bg-comida {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(assets/30platos.JPG);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .bg-exp {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(assets/exp.JPG);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .bg-medalla {
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+      url(assets/medallaipa.PNG);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  #hero {
     min-height: 50vh;
     position: relative;
- }
-
- video {
-    position:absolute;
+  }
+  video {
+    position: absolute;
     top: 0;
     left: 0;
     z-index: 10;
     width: 100%;
     height: 100%;
     object-fit: cover;
- }
- .capa {
+  }
+  .capa {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
     z-index: 60;
- }
- .overlay {
+  }
+  .overlay {
     display: none;
     position: fixed;
     top: 0;
@@ -71,21 +69,21 @@
     justify-content: center;
     align-items: center;
     z-index: 1000;
- }
- .overlay__image {
+  }
+  .overlay__image {
     max-width: 90%;
-    z-index:100;
+    z-index: 100;
     max-height: 90%;
- }
- .close {
+  }
+  .close {
     position: absolute;
     top: 100px;
     right: 40px;
     font-size: 60px;
     color: white;
     cursor: pointer;
- }
- .content-overlay {
+  }
+  .content-overlay {
     background: rgba(0, 0, 0, 0.3);
     position: absolute;
     height: 99%;
@@ -98,129 +96,131 @@
     -webkit-transition: all 0.4s ease-in-out 0s;
     -moz-transition: all 0.4s ease-in-out 0s;
     transition: all 0.4s ease-in-out 0s;
- }
- .content:hover .content-overlay {
+  }
+  .content:hover .content-overlay {
     opacity: 1;
- }
- html {
-  font-family: "Quicksand";
-  scroll-behavior: smooth;
- }
- .hero-image2 {
-  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-   url(./assets/bgmenu1.JPG);
- }
- .hero-image3 {
-  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-  url(./assets/sobrenosotros.jpeg);
- }
- .btnreserva {
-  background: #348f50;
-  background: -webkit-linear-gradient(to right, #56b4d3, #348f50);
-  background: linear-gradient(to right, #56b4d3, #348f50);
-  transition: all 0.5s ease;
- }
- .prueba {
-  position: absolute;
-  top: 330px;
-  left: -70px;
-  width: 260px;
- }
- .prueba2 {
-  position: absolute;
-  top: 900px;
-  z-index: -1;
-  right: -100px;
-  width: 350px;
-  background-color: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9))
- }
- .btnreserva:hover {
-  scale: 105%;
- }
- .hovAnim::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
-  background: rgb(74 222 128);
-  transition: width 0.3s;
- }
- .hovAnim:hover::after {
-  width: 100%;
- }
- .logo {
-  font-size: 26px;
-  line-height: 2rem;
- }
- .nav-mobile {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
- }
- .nav-mobile2 {
-  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
- }
- .hero-text {
-  height: 47dvh;
- }
- .bg-header {
-  background-color: #00000036;
-  backdrop-filter: blur(3px);
-  z-index: 9999;
- }
- .active1 {
-  border-color: rgb(52 211 153);
- }
- .menu {
-  display: none;
- }
- .menu.active {
-  display: grid;
- }
- #hace-tu-pedido {
-  border-top: 12px solid #181515;
-  border-bottom: 12px solid #181515;
-  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-   url(./assets/about-bg.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
- }
- .wpp {
-  transition: scale 0.3s ease;
- }
- .wpp:hover {
-  scale: 105%;
- }
- .gente {
-  right: 20%;
-  top: 80px;
- }
- .rojop {
-  width: 400px;
-  height: 300px;
- }
- .azul {
-  position: absolute;
-  transform: translateY(80px) translateX(80px);
-  width: 420px;
-  height: 300px;
- }
- @keyframes calm-bounce {
-  0%,
-  100% {
-   transform: translateY(0);
   }
-  50% {
-   transform: translateY(7px);
+  html {
+    font-family: "Quicksand";
+    scroll-behavior: smooth;
   }
- }
- .bouncing-element {
-  position: relative;
-  animation: calm-bounce 1.2s infinite;
-  animation-timing-function: ease-in-out;
-  transition: scale .3s ease;
- }
- .bouncing-element:hover {
-  scale: 105%;
- }
+  .hero-image2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.65)),
+      url(./assets/bgmenu1.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .hero-image3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(./assets/sobrenosotros.jpeg);
+  }
+  .btnreserva {
+    background: #348f50;
+    background: -webkit-linear-gradient(to right, #56b4d3, #348f50);
+    background: linear-gradient(to right, #56b4d3, #348f50);
+    transition: all 0.5s ease;
+  }
+  .prueba {
+    position: absolute;
+    top: 330px;
+    left: -70px;
+    width: 260px;
+  }
+  .prueba2 {
+    position: absolute;
+    top: 900px;
+    z-index: -1;
+    right: -100px;
+    width: 350px;
+    background-color: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+  }
+  .btnreserva:hover {
+    scale: 105%;
+  }
+  .hovAnim::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(74 222 128);
+    transition: width 0.3s;
+  }
+  .hovAnim:hover::after {
+    width: 100%;
+  }
+  .logo {
+    font-size: 26px;
+    line-height: 2rem;
+  }
+  .nav-mobile {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  }
+  .nav-mobile2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25));
+  }
+  .hero-text {
+    height: 47dvh;
+  }
+  .bg-header {
+    background-color: #00000036;
+    backdrop-filter: blur(3px);
+    z-index: 9999;
+  }
+  .active1 {
+    border-color: rgb(52 211 153);
+  }
+  .menu {
+    display: none;
+  }
+  .menu.active {
+    display: grid;
+  }
+  #hace-tu-pedido {
+    border-top: 12px solid #181515;
+    border-bottom: 12px solid #181515;
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(./assets/about-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  .wpp {
+    transition: scale 0.3s ease;
+  }
+  .wpp:hover {
+    scale: 105%;
+  }
+  .gente {
+    right: 20%;
+    top: 80px;
+  }
+  .rojop {
+    width: 400px;
+    height: 300px;
+  }
+  .azul {
+    position: absolute;
+    transform: translateY(80px) translateX(80px);
+    width: 420px;
+    height: 300px;
+  }
+  @keyframes calm-bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(7px);
+    }
+  }
+  .bouncing-element {
+    position: relative;
+    animation: calm-bounce 1.2s infinite;
+    animation-timing-function: ease-in-out;
+    transition: scale 0.3s ease;
+  }
+  .bouncing-element:hover {
+    scale: 105%;
+  }
 }

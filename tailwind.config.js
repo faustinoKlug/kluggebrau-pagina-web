@@ -29,6 +29,7 @@ module.exports = {
     "230px": "230px",
     "300px": "300px",
     "1500px": "1500px",
+    "400px": "400px"
    },
    colors: {
     black1: "#0A0505",

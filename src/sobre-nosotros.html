@@ -82,12 +82,11 @@
 
             <!-- MENU DE NAVEGACION MOBILE-->
             <nav class="mb-4 mt-3 hidden 815px:hidden w-full h-dvh" id="menu">
-                <ul>
-                    <li class="text-xl w-99p nav-mobile p-2 mx-2"><a href="index.html#inicio" id="li-mob">Inicio</a></li>
-                    <li class="my-2 text-xl w-99p nav-mobile2 p-2 mx-2"><a href="sobre-nosotros.html" id="li-mob">Sobre nosotros</a></li>
-                    <li class="text-xl w-99p nav-mobile2 p-2 mx-2"><a href="menu.html" id="li-mob">Menú</a></li>
-                    <li class="text-xl w-99p nav-mobile2 p-2 mx-2"><a href="index.html#informacion" id="li-mob">Información</a></li>
-                </ul>
+                <div class="flex flex-col items-center">
+                    <a href="index.html" class="text-xl w-99p nav-mobile p-2 mx-2" id="li-mob">Inicio</a>
+                    <a href="menu.html" class="text-xl w-99p nav-mobile2 p-2 mx-2 my-2" id="li-mob">Menú</a>
+                    <a href="index.html" class="text-xl w-99p nav-mobile2 p-2 mx-2" id="li-mob">Información</a>
+                </div>
             </nav>
 
         </header>
@@ -95,15 +94,20 @@
         <section class="max-w-1250px flex items-center justify-center hero-text w-full">
             <article class="flex items-center flex-col px-4 xl:px-0">
 
-                <h1 class="text-[40px] leading-[40px] text-center font-bold sm:text-5xl mb-2 lg:text-6xl">Sobre <span class="text-emerald-400 ">nosotros</span></h1>
-                <p class="text-xl text-center sm:text-2xl">Toda nuestra historia y logros</p>
+                <h1 class="font-bebas tracking-[0.04em] text-center font-bold text-5xl lg:text-7xl flex items-center">
+                    <span>Sobre <span class="text-emerald-400 ml-1"> nosotros</span></span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 15 16" class="ml-2 hidden 400px:flex">
+                        <path fill="rgb(52 211 153)" d="M7.5 7a2.5 2.5 0 0 1 0-5a2.5 2.5 0 0 1 0 5m0-4C6.67 3 6 3.67 6 4.5S6.67 6 7.5 6S9 5.33 9 4.5S8.33 3 7.5 3"/><path fill="rgb(52 211 153)" d="M13.5 11c-.28 0-.5-.22-.5-.5s.22-.5.5-.5s.5-.22.5-.5A2.5 2.5 0 0 0 11.5 7h-1c-.28 0-.5-.22-.5-.5s.22-.5.5-.5c.83 0 1.5-.67 1.5-1.5S11.33 3 10.5 3c-.28 0-.5-.22-.5-.5s.22-.5.5-.5A2.5 2.5 0 0 1 13 4.5c0 .62-.22 1.18-.6 1.62c1.49.4 2.6 1.76 2.6 3.38c0 .83-.67 1.5-1.5 1.5m-12 0C.67 11 0 10.33 0 9.5c0-1.62 1.1-2.98 2.6-3.38c-.37-.44-.6-1-.6-1.62A2.5 2.5 0 0 1 4.5 2c.28 0 .5.22.5.5s-.22.5-.5.5C3.67 3 3 3.67 3 4.5S3.67 6 4.5 6c.28 0 .5.22.5.5s-.22.5-.5.5h-1A2.5 2.5 0 0 0 1 9.5c0 .28.22.5.5.5s.5.22.5.5s-.22.5-.5.5m9 3h-6c-.83 0-1.5-.67-1.5-1.5v-1C3 9.57 4.57 8 6.5 8h2c1.93 0 3.5 1.57 3.5 3.5v1c0 .83-.67 1.5-1.5 1.5m-4-5A2.5 2.5 0 0 0 4 11.5v1c0 .28.22.5.5.5h6c.28 0 .5-.22.5-.5v-1A2.5 2.5 0 0 0 8.5 9z"/>
+                    </svg>
+                </h1>
+                <p class="text-xl text-center sm:text-2xl lg:text-[28px] leading-[36px]">Toda nuestra <span class="font-bold">historia</span> y <span class="font-bold">logros</span></p>
             </article>
         </section>
 
     </div>
 
     <main class="w-full h-full">
-        <section class="w-full h-full text-white flex items-center my-8 md:my-16">
+        <section class="w-full h-full text-white flex items-center mt-8 md:mt-20">
             <article class="mx-auto max-w-[1300px] w-full h-full px-2 md:px-6 flex flex-col items-center">
                 <div class="flex flex-col items-center md:flex-row md:justify-between md:items-center w-full">
                     <div class="">
@@ -123,7 +127,7 @@
                         </p>
                     </div>
                     <div class="flex flex-col items-center gap-y-2">
-                        <p class="text-center text-lg font-semibold py-2 px-3 bg-[#191919] text-white rounded-md w-full md:text-xl md:p-3">Inicios - 2020</p>
+                        <p class="text-center text-lg py-2 px-3 bg-[#191919] text-white rounded-md w-full md:text-xl md:p-4">🧱 Inicios - 2020 🧱</p>
                         <div class="grid grid-cols-2 gap-2">
                             <img src="assets/pic1.jpg" alt="construccion" class="w-[350px] h-[250px] object-cover">
                             <img src="assets/pic2.jpg" alt="construccion" class="w-[350px] h-[250px] object-cover">
@@ -134,7 +138,7 @@
                 </div> 
 
                 <div class="w-full flex flex-col items-center justify-center my-32">
-                    <!-- <p class="text-center text-lg font-semibold bg-[#191919] text-white rounded-md w-full md:text-xl p-3 mb-2">Nuestros logros</p> -->
+                    <p class="text-center text-lg bg-[#191919] text-white rounded-md w-full md:text-xl p-4 mb-2">⭐ Nuestro logros ⭐</p>
                     <div class="grid grid-cols-2 w-full sm:grid-cols-3 md:grid-cols-4 gap-2">
                         <div class="flex flex-col items-center justify-center gap-y-2 w-full h-[180px] bg-estrellas p-1">
                             <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 36 36">
@@ -165,7 +169,7 @@
 
                 <div class="flex flex-col md:flex-row md:justify-between md:items-center w-full gap-y-4">
                     <div class="flex flex-col items-center gap-y-2 my-3 w-full">
-                        <p class="w-full text-center text-lg font-semibold bg-[#191919] text-white rounded-md max-w-full md:text-xl p-3">Día de la habilitacion - 21 de abril de 2021</p>
+                        <p class="w-full text-center text-lg bg-[#191919] text-white rounded-md max-w-full md:text-xl p-4">🎊 Día de la habilitacion - 21 de abril de 2021 🎊</p>
                         <div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
                             <div class="">
                                 <img src="assets/habilitacion.jpg" alt="habilitacion" class="w-full h-[400px] object-cover object-center">
@@ -183,8 +187,8 @@
         </section>
     </main>
 
-    <footer id="footer" class="text-white bg-[#101010] p-8 flex">
-        <article class="flex flex-col items-center justify-between mx-auto max-w-1250px sm:flex-row w-full">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 260"><path fill="#101010" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,208C384,192,480,160,576,170.7C672,181,768,235,864,229.3C960,224,1056,160,1152,154.7C1248,149,1344,203,1392,229.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>    <footer id="footer" class="text-white bg-[#101010] px-8 pb-12 flex">
+        <article class="flex flex-col items-center justify-between mx-auto max-w-1250px sm:flex-row w-full pt-8">
             <div class="500px:mb-3 970px:mb-0">
                 <div class="">
                     <p class="text-center">
@@ -198,7 +202,7 @@
             </div>
 
             <div class="my-3 500px:my-0 500px:mb-3 970px:mb-0 bouncing-element">
-                <a href="https://wa.me/message/7YNTWW6SB2L4A1" class="" target="_blank">
+                <a href="https://wa.link/vuvszj" class="" target="_blank">
                     <button
                         class="flex items-center font-medium text-gray-900 rounded-xl bg-white px-3 py-1 justify-center font-bebas text-2xl lg:px-4 lg:py-2 lg:text-3xl tracking-wide">
                         <svg xmlns="http://www.w3.org/2000/svg" width="45" height="40" viewBox="-2 -2 24 24"
